@@ -1,0 +1,1002 @@
+﻿First Name;Family Name;Country;Room Type;Days Rented;Season;Month;MonthNumber;Price;AdjustedDays
+Liam;Nguyen;China;Spa Executive;1;mid;April;4;2577;1
+Zhang;Rossi;Mexico;Grand Lit;3;low;January;1;3360;2
+Carlos;Khan;China;Standard Single;5;high;August;8;6420;7
+Hiroshi;Kim;Russia;LOFT Suite;2;mid;October;10;6922;2
+Muhammad;Martinez;Vietnam;Suite;4;mid;October;10;12784;4
+Lucas;Khan;Australia;Standard Double;10;high;August;8;16700;13
+Hiroshi;Nguyen;Australia;Suite;1;low;November;11;2522;1
+Santiago;Schneider;Canada;LOFT Suite;5;low;January;1;15995;4
+Santiago;Khan;Nigeria;Standard Double;2;low;December;12;2530;2
+Lucas;Garcia;Spain;Standard Double;9;mid;October;10;14400;10
+Maria;Rossi;Japan;Grand Lit;4;high;June;6;6064;5
+Chen;Garcia;Spain;Grand Lit;7;high;August;8;12096;9
+Maria;Silva;India;Junior Suite;5;mid;September;9;10020;6
+Sara;Garcia;Italy;Standard Single;6;high;July;7;7452;8
+Isabella;Johansson;Spain;Spa Executive;3;high;July;7;7935;4
+Carlos;Garcia;United Kingdom;Standard Single;8;low;January;1;7272;6
+Carlos;Hassan;Canada;LOFT Suite;6;high;July;7;22686;8
+Ingrid;Ivanov;Russia;Grand Lit;9;mid;May;5;10944;10
+Fatima;Nguyen;Vietnam;LOFT Suite;1;low;November;11;3151;1
+David;Patel;Mexico;Standard Double;2;low;February;2;2432;2
+Elena;Müller;India;Superior Double;3;low;November;11;4389;2
+Lucas;Smith;Nigeria;Standard Single;7;high;June;6;10087;9
+Santiago;Dubois;Egypt;LOFT Suite;2;high;July;7;7934;3
+John;Nguyen;France;Standard Double;6;low;March;3;7734;5
+Aisha;Khan;India;Junior Suite;5;low;February;2;10915;4
+Ingrid;Khan;Italy;Suite;7;high;June;6;21315;9
+Lucas;Martinez;South Korea;Grand Lit;9;low;March;3;9963;7
+Olivia;Rossi;Vietnam;LOFT Suite;6;low;December;12;19524;5
+Aisha;Sato;Pakistan;Standard Double;8;mid;May;5;12072;9
+Fatima;Martinez;Mexico;Standard Single;8;mid;May;5;9272;9
+Santiago;Rossi;Brazil;Junior Suite;2;high;August;8;4876;3
+Aisha;Dubois;Japan;Standard Single;6;low;February;2;5526;5
+Ingrid;Hassan;India;Suite;8;high;June;6;24080;10
+Isabella;Johansson;South Korea;Standard Single;7;mid;May;5;7441;8
+John;Brown;Nigeria;Junior Suite;10;mid;September;9;21200;11
+Zhang;Brown;Sweden;Spa Executive;1;high;July;7;2512;1
+Hiroshi;Kim;Sweden;Superior Double;6;low;December;12;8790;5
+Lucas;Müller;Germany;Superior Double;6;mid;April;4;9192;7
+Elena;Smith;Canada;Junior Suite;10;low;March;3;20510;8
+Ingrid;Yamamoto;Spain;Grand Lit;5;mid;October;10;6850;6
+Zhang;Garcia;India;Junior Suite;5;mid;October;10;10115;6
+Santiago;Johansson;Spain;Standard Single;10;low;December;12;9720;8
+Carlos;Nguyen;Japan;Junior Suite;1;high;June;6;2498;1
+Liam;Sato;Vietnam;Standard Single;4;mid;April;4;4832;4
+Santiago;Khan;Australia;Spa Executive;4;low;February;2;8572;3
+David;Johansson;United Kingdom;Superior Double;1;low;March;3;1489;1
+Hiroshi;Garcia;South Korea;LOFT Suite;10;low;January;1;34260;8
+Carlos;Kim;Italy;Junior Suite;7;low;March;3;15295;6
+Fatima;Martinez;Japan;Junior Suite;1;mid;May;5;2094;1
+Fatima;Brown;China;Junior Suite;8;mid;September;9;18184;9
+Sophia;Smith;India;Suite;9;mid;May;5;26100;10
+Olivia;Khan;Pakistan;Grand Lit;2;low;November;11;2720;2
+Carlos;Müller;India;Superior Double;6;low;December;12;8658;5
+Isabella;Yamamoto;Pakistan;Spa Executive;3;mid;April;4;6636;3
+John;Martinez;United Kingdom;Grand Lit;8;mid;May;5;10792;9
+Zhang;Patel;Mexico;Spa Executive;1;mid;October;10;2523;1
+Ahmed;Müller;Italy;Suite;6;mid;October;10;17934;7
+Muhammad;Nguyen;Nigeria;Standard Double;9;mid;April;4;13851;10
+Ahmed;Garcia;Canada;Junior Suite;8;low;November;11;15456;6
+Liam;Brown;Spain;Grand Lit;9;high;July;7;13275;12
+David;Kim;Russia;Grand Lit;1;low;December;12;1149;1
+John;Johansson;Russia;Grand Lit;1;low;March;3;1299;1
+Elena;Johansson;Russia;Grand Lit;8;high;June;6;12288;10
+Elena;Khan;Canada;LOFT Suite;9;low;February;2;27918;7
+Elena;Silva;Brazil;Grand Lit;7;high;August;8;11872;9
+Isabella;Martinez;Australia;Superior Double;2;mid;September;9;3814;2
+Elena;Johansson;Nigeria;Standard Double;1;high;July;7;1952;1
+Olivia;Silva;Australia;Standard Double;8;mid;May;5;12368;9
+David;Khan;Nigeria;Superior Double;8;mid;October;10;12160;9
+Fatima;Rossi;Egypt;Junior Suite;2;mid;September;9;4434;2
+Fatima;Khan;Sweden;Standard Double;5;low;March;3;7315;4
+Sophia;Johansson;United States;Suite;3;high;June;6;9087;4
+Maria;Patel;United States;Standard Double;3;low;November;11;4740;2
+John;Silva;Sweden;LOFT Suite;2;mid;September;9;6532;2
+Chen;Schneider;Japan;Standard Double;1;low;January;1;1359;1
+Lucas;Rossi;Nigeria;Grand Lit;10;mid;May;5;14710;11
+Sophia;Yamamoto;South Korea;Standard Single;2;low;February;2;1824;2
+Ingrid;Nguyen;United States;Suite;2;high;August;8;6090;3
+Aisha;Ivanov;United Kingdom;Suite;5;low;December;12;13515;4
+Muhammad;Garcia;India;Junior Suite;10;mid;September;9;22920;11
+Muhammad;Sato;United Kingdom;Standard Single;4;low;January;1;3752;3
+Sara;Sato;China;Suite;3;high;June;6;10317;4
+Hiroshi;Hassan;France;Standard Double;5;high;August;8;8600;7
+Fatima;Garcia;India;Grand Lit;9;high;August;8;12816;12
+Olivia;Patel;Pakistan;Standard Double;9;low;December;12;13689;7
+Ingrid;Silva;Mexico;Junior Suite;8;low;February;2;15696;6
+Aisha;Kim;Canada;Standard Single;4;low;March;3;4512;3
+Aisha;Johansson;China;LOFT Suite;1;mid;September;9;3764;1
+Lucas;Smith;Sweden;Standard Single;3;low;February;2;3243;2
+Isabella;Müller;France;Grand Lit;3;high;August;8;4329;4
+Santiago;Johansson;Brazil;Junior Suite;9;high;June;6;19935;12
+Ahmed;Khan;Sweden;Superior Double;1;high;July;7;1864;1
+Hiroshi;Johansson;China;Suite;9;high;July;7;30105;12
+Ahmed;Sato;South Korea;Junior Suite;7;high;June;6;17143;9
+Isabella;Schneider;Vietnam;Standard Single;4;mid;April;4;4132;4
+Ingrid;Lee;Russia;Suite;10;mid;September;9;30490;11
+Ingrid;Rossi;Germany;Standard Double;8;mid;October;10;10536;9
+Zhang;Nguyen;Germany;LOFT Suite;8;high;August;8;30480;10
+Santiago;Khan;Japan;Grand Lit;8;mid;September;9;9808;9
+Elena;Sato;China;Suite;7;mid;April;4;20356;8
+Chen;Dubois;Egypt;Spa Executive;8;low;March;3;18480;6
+Carlos;Rossi;Russia;Suite;10;high;July;7;33910;13
+Sara;Müller;Russia;Standard Double;3;mid;May;5;4704;3
+Lucas;Garcia;Canada;Standard Single;4;high;June;6;5248;5
+Aisha;Khan;Sweden;Junior Suite;6;high;June;6;13236;8
+Muhammad;Smith;Vietnam;Suite;3;mid;May;5;9393;3
+Santiago;Khan;Germany;Standard Single;4;low;January;1;3952;3
+Ingrid;Smith;United States;Spa Executive;2;high;August;8;5090;3
+John;Kim;Nigeria;Standard Double;4;high;August;8;6732;5
+David;Khan;Italy;Superior Double;2;low;February;2;2800;2
+Maria;Khan;Mexico;Grand Lit;2;high;August;8;3216;3
+David;Silva;Vietnam;Suite;2;high;July;7;6596;3
+Lucas;Patel;United States;Suite;6;mid;September;9;16254;7
+Liam;Martinez;United States;Standard Single;6;low;December;12;5928;5
+Elena;Olsen;United Kingdom;Junior Suite;1;low;March;3;2104;1
+Carlos;Müller;China;Standard Double;10;mid;October;10;13260;11
+Chen;Khan;Japan;Junior Suite;4;low;February;2;7536;3
+Elena;Kim;India;Standard Single;10;mid;September;9;11730;11
+Liam;Brown;India;Grand Lit;2;low;November;11;2460;2
+Liam;Yamamoto;Sweden;Standard Single;7;mid;May;5;8554;8
+Muhammad;Müller;Spain;Superior Double;7;mid;April;4;13447;8
+Ahmed;Johansson;Pakistan;Spa Executive;8;mid;September;9;20384;9
+Fatima;Sato;India;Spa Executive;2;high;July;7;5440;3
+Zhang;Kim;Mexico;Superior Double;6;low;December;12;9864;5
+Sophia;Sato;Italy;Superior Double;2;low;January;1;3310;2
+Liam;Olsen;Spain;Junior Suite;2;mid;October;10;4440;2
+Ahmed;Yamamoto;Mexico;Superior Double;1;mid;October;10;1966;1
+Sara;Khan;Vietnam;Standard Single;5;low;December;12;5685;4
+Isabella;Olsen;Germany;Superior Double;5;mid;October;10;9640;6
+Elena;Silva;Spain;Junior Suite;2;mid;September;9;4118;2
+Olivia;Olsen;Pakistan;Junior Suite;3;low;November;11;5541;2
+David;Brown;France;Spa Executive;5;high;July;7;12505;7
+Ingrid;Yamamoto;South Korea;Suite;1;high;August;8;3068;1
+Aisha;Rossi;Japan;Spa Executive;6;mid;October;10;13290;7
+Fatima;Ivanov;Vietnam;Superior Double;8;high;July;7;15416;10
+Maria;Lee;China;Superior Double;4;mid;September;9;7524;4
+Muhammad;Nguyen;United States;Spa Executive;1;high;July;7;2606;1
+Muhammad;Martinez;United Kingdom;Spa Executive;6;mid;May;5;14238;7
+Sara;Rossi;Russia;Grand Lit;10;high;August;8;14200;13
+Sophia;Kim;South Korea;Standard Single;4;high;July;7;5304;5
+Aisha;Silva;Japan;Junior Suite;10;low;November;11;19980;8
+Santiago;Silva;Sweden;Standard Double;8;high;July;7;13480;10
+Chen;Kim;United States;LOFT Suite;8;low;January;1;24816;6
+Aisha;Nguyen;China;Spa Executive;6;low;January;1;14874;5
+Muhammad;Yamamoto;Italy;Standard Double;2;mid;April;4;3208;2
+Isabella;Lee;Italy;Standard Single;2;low;February;2;2144;2
+Isabella;Rossi;Canada;Grand Lit;1;mid;October;10;1391;1
+Liam;Dubois;China;Junior Suite;7;low;November;11;13293;6
+Chen;Smith;Australia;Spa Executive;2;low;November;11;4364;2
+Chen;Nguyen;Vietnam;Spa Executive;1;high;July;7;2606;1
+Liam;Olsen;Mexico;Standard Double;6;low;February;2;7782;5
+Carlos;Silva;Brazil;Superior Double;3;low;February;2;5100;2
+Elena;Kim;South Korea;Suite;8;low;January;1;21296;6
+Aisha;Johansson;India;LOFT Suite;3;mid;May;5;9867;3
+Fatima;Hassan;Egypt;Suite;5;mid;September;9;15415;6
+Muhammad;Silva;Australia;Spa Executive;10;high;July;7;26210;13
+John;Rossi;Italy;LOFT Suite;2;low;November;11;6830;2
+John;Hassan;United States;Grand Lit;1;low;November;11;1122;1
+Aisha;Kim;China;Suite;9;high;July;7;28359;12
+Isabella;Smith;Vietnam;Suite;3;mid;May;5;8454;3
+Elena;Smith;South Korea;Spa Executive;8;low;December;12;16776;6
+Elena;Kim;Brazil;Spa Executive;8;low;February;2;19424;6
+Liam;Rossi;Sweden;Superior Double;7;high;August;8;14140;9
+John;Khan;China;Junior Suite;6;high;July;7;13434;8
+Liam;Yamamoto;Nigeria;Standard Single;5;low;January;1;5825;4
+Isabella;Müller;Russia;Spa Executive;3;high;June;6;7614;4
+Aisha;Rossi;Spain;Standard Single;3;low;February;2;3087;2
+Muhammad;Sato;Egypt;Standard Single;8;mid;April;4;9792;9
+Muhammad;Johansson;China;Standard Single;7;low;January;1;7756;6
+Sara;Khan;India;Spa Executive;2;high;July;7;5590;3
+Sophia;Rossi;Spain;Superior Double;6;high;July;7;11538;8
+Maria;Martinez;Sweden;LOFT Suite;1;high;July;7;3654;1
+Olivia;Patel;Spain;Grand Lit;4;high;August;8;5912;5
+Hiroshi;Smith;Japan;Grand Lit;5;low;November;11;6580;4
+Maria;Ivanov;India;Standard Double;1;low;November;11;1410;1
+Fatima;Olsen;Vietnam;Standard Double;6;high;July;7;11730;8
+Ahmed;Brown;Canada;Suite;1;high;July;7;3224;1
+John;Garcia;South Korea;Junior Suite;7;low;January;1;13293;6
+Elena;Johansson;Canada;Grand Lit;9;high;June;6;16065;12
+Santiago;Smith;Pakistan;LOFT Suite;6;mid;October;10;19362;7
+Maria;Khan;Brazil;Grand Lit;3;mid;April;4;4341;3
+Ingrid;Schneider;Vietnam;Junior Suite;6;mid;September;9;12300;7
+David;Khan;Germany;Standard Double;5;mid;May;5;6805;6
+Fatima;Sato;Nigeria;Standard Single;7;low;January;1;7497;6
+Fatima;Yamamoto;Australia;Suite;2;low;February;2;5602;2
+Fatima;Brown;United Kingdom;Suite;6;mid;October;10;17892;7
+Ahmed;Sato;United Kingdom;Standard Double;10;mid;October;10;14930;11
+Ahmed;Rossi;Australia;Junior Suite;2;mid;May;5;4518;2
+Elena;Ivanov;India;Suite;6;mid;October;10;18378;7
+Sara;Müller;Canada;Grand Lit;9;high;July;7;13779;12
+Ingrid;Olsen;France;Spa Executive;5;mid;September;9;11335;6
+Fatima;Khan;Spain;Standard Double;7;mid;April;4;9786;8
+Lucas;Kim;United States;Junior Suite;9;mid;October;10;20187;10
+Ingrid;Dubois;Vietnam;Junior Suite;2;low;November;11;3624;2
+Aisha;Silva;Canada;Standard Single;8;low;January;1;8400;6
+Carlos;Silva;Russia;Grand Lit;6;high;July;7;8586;8
+Hiroshi;Smith;Mexico;Junior Suite;9;low;November;11;17154;7
+Ingrid;Olsen;France;LOFT Suite;5;high;August;8;18900;7
+Muhammad;Silva;South Korea;Superior Double;8;high;June;6;16568;10
+Muhammad;Smith;France;Superior Double;4;mid;October;10;6676;4
+Muhammad;Ivanov;Australia;Standard Double;6;low;February;2;7860;5
+Maria;Rossi;India;Spa Executive;5;low;March;3;12160;4
+John;Smith;Sweden;Superior Double;7;low;November;11;9870;6
+Zhang;Patel;Brazil;Spa Executive;5;mid;October;10;12750;6
+Sara;Hassan;China;Standard Double;3;mid;May;5;4077;3
+Aisha;Silva;India;Junior Suite;6;high;August;8;14688;8
+Hiroshi;Johansson;United Kingdom;Grand Lit;1;high;July;7;1753;1
+Hiroshi;Ivanov;China;Grand Lit;7;mid;April;4;9947;8
+Maria;Smith;Australia;Standard Single;10;low;February;2;11710;8
+Ingrid;Yamamoto;Sweden;Grand Lit;6;mid;April;4;9534;7
+Carlos;Kim;Brazil;Grand Lit;6;mid;October;10;8400;7
+David;Martinez;China;Junior Suite;6;mid;May;5;12792;7
+Lucas;Khan;Australia;Grand Lit;10;high;July;7;17150;13
+Santiago;Brown;United Kingdom;Superior Double;7;low;February;2;11256;6
+Muhammad;Yamamoto;United Kingdom;Superior Double;5;high;July;7;10635;7
+Olivia;Ivanov;Spain;Superior Double;4;mid;April;4;6112;4
+Olivia;Khan;United Kingdom;Standard Double;10;mid;April;4;15770;11
+Santiago;Schneider;China;Standard Double;3;mid;April;4;4800;3
+Muhammad;Johansson;Vietnam;Standard Single;2;high;August;8;2444;3
+Hiroshi;Ivanov;Japan;Grand Lit;7;low;November;11;8099;6
+Isabella;Kim;South Korea;Grand Lit;5;high;July;7;8170;7
+Ahmed;Martinez;Egypt;Standard Double;6;low;February;2;8832;5
+Liam;Yamamoto;Brazil;Standard Single;10;low;February;2;9320;8
+Liam;Yamamoto;Canada;Junior Suite;6;high;July;7;13272;8
+Liam;Rossi;Spain;Standard Single;1;mid;May;5;1038;1
+Muhammad;Silva;Canada;LOFT Suite;7;high;August;8;26292;9
+Ahmed;Smith;Australia;Standard Single;4;high;July;7;4852;5
+Sophia;Garcia;France;Superior Double;1;mid;May;5;1939;1
+Santiago;Martinez;Pakistan;Standard Double;1;high;August;8;1759;1
+Liam;Smith;Sweden;Suite;8;low;November;11;23560;6
+Lucas;Sato;Italy;Superior Double;6;low;November;11;8922;5
+Zhang;Dubois;South Korea;Junior Suite;4;low;November;11;7464;3
+Fatima;Dubois;Pakistan;Grand Lit;2;low;March;3;2686;2
+Aisha;Johansson;France;Standard Double;1;low;January;1;1483;1
+Carlos;Khan;South Korea;Grand Lit;2;low;November;11;2760;2
+John;Dubois;Sweden;Spa Executive;9;high;August;8;25038;12
+Olivia;Dubois;Russia;Standard Double;9;high;August;8;15003;12
+Santiago;Yamamoto;France;Suite;5;high;June;6;16080;7
+Sara;Martinez;Egypt;Spa Executive;8;high;August;8;21440;10
+David;Müller;South Korea;Junior Suite;7;low;February;2;14329;6
+Maria;Johansson;Mexico;Superior Double;2;mid;September;9;3768;2
+Ingrid;Olsen;Nigeria;Superior Double;10;low;March;3;17490;8
+David;Garcia;China;LOFT Suite;10;low;February;2;33860;8
+Chen;Lee;South Korea;Standard Double;5;mid;September;9;8075;6
+Ingrid;Khan;Brazil;Suite;6;mid;October;10;19446;7
+Olivia;Yamamoto;India;Suite;1;high;June;6;3083;1
+Elena;Garcia;Nigeria;Standard Double;6;high;June;6;10968;8
+Lucas;Rossi;Mexico;Spa Executive;3;mid;October;10;7341;3
+Carlos;Schneider;India;Standard Single;7;mid;April;4;8960;8
+Elena;Rossi;Germany;Suite;4;mid;April;4;12984;4
+Muhammad;Brown;Sweden;Spa Executive;1;low;February;2;2297;1
+Muhammad;Schneider;Italy;Grand Lit;4;low;November;11;4452;3
+David;Nguyen;India;Superior Double;2;low;December;12;2866;2
+Sara;Martinez;Australia;Standard Double;9;low;November;11;14139;7
+Aisha;Sato;Brazil;Suite;1;mid;May;5;2989;1
+Fatima;Schneider;Italy;Superior Double;2;mid;October;10;3780;2
+Muhammad;Brown;Germany;Grand Lit;9;low;December;12;10917;7
+Santiago;Rossi;France;Superior Double;1;low;November;11;1736;1
+Sara;Smith;Egypt;Suite;1;low;January;1;2849;1
+Elena;Patel;Italy;Spa Executive;5;low;January;1;12085;4
+Muhammad;Kim;Nigeria;LOFT Suite;6;low;November;11;18630;5
+Elena;Yamamoto;Russia;Superior Double;8;high;July;7;17376;10
+Ingrid;Lee;United Kingdom;Grand Lit;8;mid;May;5;9784;9
+Ahmed;Smith;Russia;Spa Executive;4;mid;May;5;10000;4
+David;Smith;Brazil;LOFT Suite;3;mid;May;5;10170;3
+Isabella;Lee;India;Suite;9;mid;September;9;27297;10
+Muhammad;Smith;Mexico;Superior Double;8;low;March;3;12592;6
+Hiroshi;Smith;Mexico;Superior Double;6;mid;April;4;11142;7
+Liam;Sato;United Kingdom;Superior Double;4;mid;May;5;7732;4
+Zhang;Hassan;Russia;Junior Suite;5;high;August;8;12465;7
+Sophia;Ivanov;Mexico;Spa Executive;5;low;December;12;11005;4
+John;Müller;United States;LOFT Suite;2;high;August;8;7452;3
+Ingrid;Rossi;Mexico;Superior Double;9;high;July;7;19332;12
+Aisha;Johansson;Pakistan;Spa Executive;3;low;December;12;6630;2
+Olivia;Hassan;Vietnam;Standard Double;8;low;November;11;11776;6
+Aisha;Yamamoto;United Kingdom;Standard Double;10;low;November;11;15860;8
+Aisha;Nguyen;Canada;Junior Suite;2;mid;April;4;4470;2
+Muhammad;Hassan;Italy;Suite;8;mid;May;5;23112;9
+Elena;Müller;Egypt;Standard Double;10;low;January;1;15740;8
+Liam;Müller;South Korea;LOFT Suite;3;low;February;2;9507;2
+Zhang;Smith;France;Grand Lit;10;mid;September;9;12290;11
+Isabella;Garcia;China;Junior Suite;10;high;July;7;24910;13
+David;Dubois;Australia;Standard Single;3;mid;October;10;3675;3
+David;Dubois;Canada;Standard Double;8;low;November;11;11928;6
+Liam;Müller;Spain;Spa Executive;10;high;June;6;25350;13
+Ingrid;Martinez;Spain;Junior Suite;4;mid;April;4;9324;4
+Elena;Ivanov;India;Junior Suite;3;low;March;3;5772;2
+Isabella;Kim;Italy;Superior Double;10;low;December;12;17510;8
+Elena;Silva;Vietnam;Grand Lit;9;high;July;7;15435;12
+Lucas;Sato;Brazil;Standard Single;10;mid;May;5;11340;11
+Hiroshi;Smith;Mexico;Standard Single;9;high;August;8;12015;12
+Santiago;Ivanov;Brazil;Junior Suite;6;high;August;8;13620;8
+Olivia;Olsen;Nigeria;Junior Suite;7;low;December;12;13860;6
+John;Olsen;Australia;Superior Double;1;high;July;7;2098;1
+Olivia;Sato;Italy;Standard Single;6;mid;April;4;7320;7
+Zhang;Nguyen;Germany;LOFT Suite;5;high;August;8;18565;7
+Elena;Martinez;Nigeria;Standard Single;2;low;March;3;1958;2
+Ahmed;Müller;India;Grand Lit;4;mid;September;9;5580;4
+Santiago;Garcia;France;Superior Double;10;high;July;7;18750;13
+David;Schneider;United States;Superior Double;9;high;August;8;16524;12
+Isabella;Olsen;United Kingdom;Superior Double;2;mid;April;4;3036;2
+David;Yamamoto;United Kingdom;Junior Suite;6;high;June;6;14790;8
+Muhammad;Schneider;Japan;Junior Suite;10;mid;September;9;20640;11
+Maria;Nguyen;Egypt;Suite;8;low;November;11;20072;6
+Muhammad;Rossi;Japan;Standard Double;4;high;June;6;6520;5
+Aisha;Rossi;Japan;Superior Double;6;mid;September;9;9984;7
+Olivia;Patel;China;Superior Double;3;low;November;11;4344;2
+Chen;Patel;Nigeria;Grand Lit;9;mid;May;5;12294;10
+Santiago;Yamamoto;Spain;Grand Lit;4;low;November;11;5156;3
+Ahmed;Garcia;Mexico;Grand Lit;1;mid;May;5;1564;1
+Olivia;Johansson;Pakistan;LOFT Suite;7;high;July;7;25550;9
+Ahmed;Rossi;China;Grand Lit;10;mid;September;9;13930;11
+Sophia;Müller;Russia;Spa Executive;2;mid;September;9;4950;2
+Chen;Garcia;Canada;Grand Lit;10;high;July;7;17590;13
+Elena;Ivanov;Australia;LOFT Suite;6;high;June;6;21648;8
+Sara;Johansson;Germany;Suite;9;mid;September;9;26604;10
+Ahmed;Nguyen;United Kingdom;Superior Double;2;high;July;7;3694;3
+Isabella;Smith;Sweden;Suite;9;mid;May;5;24966;10
+Santiago;Hassan;Japan;LOFT Suite;3;low;February;2;9732;2
+Santiago;Nguyen;South Korea;Standard Single;1;mid;April;4;1133;1
+Elena;Khan;United States;Junior Suite;5;high;June;6;12460;7
+Chen;Ivanov;United States;Grand Lit;3;high;August;8;4569;4
+Ahmed;Khan;Germany;LOFT Suite;1;high;August;8;3719;1
+Aisha;Dubois;Germany;Superior Double;7;low;March;3;10423;6
+Hiroshi;Kim;Mexico;Superior Double;5;low;March;3;8620;4
+Hiroshi;Olsen;Brazil;Superior Double;7;mid;May;5;13076;8
+Sophia;Smith;Italy;Standard Single;10;high;July;7;13760;13
+Fatima;Smith;Pakistan;Standard Single;3;high;June;6;3942;4
+Zhang;Smith;China;Grand Lit;2;high;July;7;3082;3
+Zhang;Lee;Australia;Standard Double;10;mid;September;9;14490;11
+Chen;Müller;Sweden;Grand Lit;6;mid;September;9;9006;7
+John;Garcia;Canada;Standard Single;8;low;March;3;8032;6
+Aisha;Yamamoto;United States;Grand Lit;10;high;August;8;14170;13
+Aisha;Sato;Russia;Suite;3;mid;April;4;9639;3
+Liam;Ivanov;Pakistan;LOFT Suite;3;low;November;11;9000;2
+Olivia;Martinez;Sweden;Junior Suite;2;high;June;6;4996;3
+Hiroshi;Brown;China;Standard Double;4;mid;October;10;5464;4
+Hiroshi;Olsen;United States;Standard Double;8;low;February;2;10528;6
+Santiago;Lee;Japan;LOFT Suite;3;high;July;7;11736;4
+Aisha;Brown;Egypt;Spa Executive;7;mid;October;10;16562;8
+Muhammad;Sato;China;Standard Single;1;mid;September;9;1159;1
+Muhammad;Silva;Sweden;Standard Single;6;low;December;12;6702;5
+Zhang;Patel;Mexico;Superior Double;10;high;August;8;20720;13
+Liam;Müller;Italy;Spa Executive;8;high;July;7;20976;10
+Aisha;Patel;Brazil;Suite;8;high;August;8;24160;10
+David;Olsen;Vietnam;Junior Suite;1;high;July;7;2253;1
+Muhammad;Kim;France;Grand Lit;10;high;July;7;17930;13
+Lucas;Johansson;Japan;Superior Double;10;low;November;11;15900;8
+Elena;Smith;Vietnam;LOFT Suite;5;low;February;2;16090;4
+John;Sato;China;Spa Executive;10;mid;September;9;22700;11
+Isabella;Rossi;Japan;Standard Single;6;mid;May;5;7146;7
+Sara;Hassan;India;LOFT Suite;1;low;March;3;3225;1
+Lucas;Lee;Spain;Suite;7;mid;May;5;20468;8
+Fatima;Martinez;Pakistan;Junior Suite;9;mid;April;4;18153;10
+John;Dubois;Japan;Junior Suite;9;high;August;8;20763;12
+Muhammad;Smith;Japan;Junior Suite;7;low;February;2;15365;6
+John;Hassan;United Kingdom;LOFT Suite;6;low;December;12;19416;5
+Sophia;Garcia;Germany;Suite;7;high;June;6;23240;9
+Sara;Patel;Vietnam;Grand Lit;4;mid;September;9;6028;4
+Ahmed;Smith;Egypt;Spa Executive;8;low;January;1;18840;6
+John;Nguyen;Pakistan;Spa Executive;10;mid;April;4;23890;11
+Muhammad;Sato;United States;Junior Suite;5;high;June;6;12420;7
+David;Lee;Sweden;LOFT Suite;6;high;August;8;22368;8
+Sophia;Sato;Russia;Standard Single;5;low;March;3;5125;4
+Olivia;Garcia;Nigeria;Standard Single;6;mid;September;9;7500;7
+Liam;Brown;Sweden;Junior Suite;10;high;July;7;22870;13
+Aisha;Garcia;Canada;LOFT Suite;2;mid;May;5;6886;2
+Isabella;Dubois;South Korea;LOFT Suite;1;high;August;8;3522;1
+Chen;Garcia;South Korea;Suite;1;high;August;8;3162;1
+Sara;Yamamoto;Japan;Standard Double;10;high;June;6;17080;13
+Ingrid;Hassan;South Korea;LOFT Suite;10;low;January;1;31010;8
+Sara;Sato;Australia;Grand Lit;7;low;November;11;9471;6
+Olivia;Lee;Mexico;Suite;7;low;December;12;18823;6
+Carlos;Silva;Sweden;Superior Double;8;high;July;7;15240;10
+David;Silva;Vietnam;Spa Executive;6;high;July;7;15522;8
+Muhammad;Kim;Vietnam;Suite;2;high;August;8;6786;3
+Hiroshi;Müller;Sweden;Standard Single;1;high;August;8;1312;1
+Isabella;Müller;United Kingdom;Spa Executive;6;mid;April;4;14778;7
+Hiroshi;Silva;Russia;Standard Single;10;low;January;1;9580;8
+Isabella;Ivanov;Vietnam;Spa Executive;4;mid;October;10;9760;4
+Aisha;Kim;United Kingdom;Spa Executive;9;low;March;3;19584;7
+Carlos;Johansson;Mexico;Suite;3;low;March;3;7560;2
+Liam;Schneider;United Kingdom;Junior Suite;5;high;July;7;11745;7
+Lucas;Johansson;Nigeria;Junior Suite;3;high;June;6;7002;4
+John;Ivanov;France;Superior Double;6;high;August;8;10962;8
+Maria;Silva;South Korea;Standard Double;1;high;July;7;1807;1
+Hiroshi;Khan;Egypt;Junior Suite;6;mid;October;10;13506;7
+Liam;Müller;China;Standard Double;3;mid;April;4;4032;3
+Chen;Smith;Canada;Junior Suite;7;mid;April;4;14560;8
+Isabella;Schneider;Japan;Standard Double;10;mid;May;5;16260;11
+Aisha;Ivanov;Russia;Suite;2;mid;October;10;5906;2
+Lucas;Patel;Vietnam;LOFT Suite;4;mid;September;9;14076;4
+Muhammad;Kim;South Korea;Superior Double;9;mid;April;4;15516;10
+Maria;Smith;China;LOFT Suite;2;mid;May;5;7470;2
+David;Yamamoto;Nigeria;Spa Executive;7;low;February;2;16373;6
+Liam;Patel;Vietnam;Suite;1;low;March;3;2850;1
+Lucas;Ivanov;Australia;Superior Double;9;low;December;12;13761;7
+Chen;Kim;Sweden;Grand Lit;9;mid;October;10;13392;10
+Elena;Garcia;China;Suite;10;mid;September;9;30350;11
+Elena;Kim;Russia;Junior Suite;5;high;July;7;11205;7
+Chen;Yamamoto;United Kingdom;Superior Double;1;low;November;11;1528;1
+Fatima;Khan;Australia;Junior Suite;7;low;December;12;12824;6
+John;Ivanov;Australia;Suite;9;mid;October;10;29592;10
+Carlos;Kim;United States;Superior Double;10;mid;May;5;18100;11
+David;Lee;Pakistan;Spa Executive;1;low;December;12;2149;1
+Aisha;Brown;United States;Standard Double;7;low;February;2;10906;6
+Sophia;Khan;Mexico;Grand Lit;4;high;July;7;6892;5
+Ingrid;Yamamoto;India;Suite;1;low;March;3;2627;1
+David;Martinez;Nigeria;Junior Suite;3;mid;April;4;7101;3
+Carlos;Kim;Mexico;Superior Double;8;mid;May;5;15888;9
+Olivia;Patel;Sweden;Suite;7;mid;April;4;22981;8
+Elena;Rossi;Brazil;Spa Executive;4;high;June;6;10412;5
+Lucas;Smith;Australia;Suite;4;mid;April;4;11744;4
+Sophia;Hassan;Italy;Spa Executive;8;low;February;2;17920;6
+Sophia;Silva;Germany;LOFT Suite;8;low;February;2;24560;6
+Zhang;Khan;Vietnam;Superior Double;4;mid;May;5;6616;4
+Liam;Nguyen;Japan;Superior Double;2;high;August;8;4206;3
+Elena;Schneider;China;Suite;6;mid;October;10;16290;7
+Ahmed;Khan;Nigeria;Standard Single;9;high;June;6;12213;12
+Fatima;Smith;Vietnam;Standard Double;2;mid;May;5;3142;2
+Chen;Rossi;Mexico;Standard Double;1;low;March;3;1287;1
+Elena;Olsen;Pakistan;Standard Single;9;high;July;7;10953;12
+Zhang;Nguyen;Germany;Standard Double;7;low;March;3;8638;6
+Aisha;Patel;Australia;Grand Lit;10;low;January;1;12420;8
+Isabella;Yamamoto;Egypt;Grand Lit;3;low;February;2;3495;2
+David;Patel;France;Suite;1;low;November;11;2815;1
+Ingrid;Martinez;Japan;Grand Lit;9;mid;April;4;11826;10
+Sophia;Yamamoto;Italy;Grand Lit;8;high;August;8;13128;10
+Chen;Martinez;Germany;Grand Lit;3;mid;September;9;3972;3
+John;Brown;India;Spa Executive;5;mid;April;4;11025;6
+Santiago;Rossi;Spain;Spa Executive;1;low;January;1;2376;1
+David;Rossi;Italy;Junior Suite;5;high;July;7;11515;7
+John;Johansson;Vietnam;Standard Double;4;high;July;7;6444;5
+Isabella;Yamamoto;China;Suite;1;high;June;6;3265;1
+Muhammad;Hassan;Sweden;Suite;6;mid;April;4;17868;7
+David;Khan;Spain;Grand Lit;8;mid;April;4;10656;9
+Muhammad;Rossi;Brazil;Superior Double;1;high;June;6;1884;1
+Olivia;Nguyen;China;Standard Single;2;mid;September;9;2222;2
+John;Patel;Sweden;Suite;5;low;March;3;13155;4
+Carlos;Yamamoto;India;Suite;2;low;February;2;5868;2
+Olivia;Brown;Pakistan;Suite;4;high;July;7;12836;5
+Elena;Khan;China;Spa Executive;6;high;July;7;16320;8
+Olivia;Johansson;South Korea;Junior Suite;9;mid;April;4;20448;10
+Muhammad;Johansson;United States;Standard Single;7;mid;May;5;7560;8
+Liam;Lee;Russia;Superior Double;1;mid;May;5;1884;1
+Maria;Silva;Japan;Superior Double;2;mid;September;9;3864;2
+Isabella;Rossi;Spain;Suite;3;low;January;1;7926;2
+Isabella;Khan;France;Superior Double;6;low;December;12;10056;5
+Hiroshi;Silva;Russia;Standard Single;3;low;November;11;2733;2
+Chen;Ivanov;United States;Spa Executive;2;high;June;6;5206;3
+Isabella;Ivanov;Egypt;Standard Single;2;high;July;7;2654;3
+Chen;Hassan;Japan;Suite;3;low;February;2;7623;2
+Ahmed;Ivanov;Japan;Superior Double;6;high;July;7;12402;8
+Carlos;Khan;Mexico;Junior Suite;1;high;June;6;2299;1
+Santiago;Dubois;United Kingdom;Superior Double;9;low;December;12;15444;7
+Ingrid;Ivanov;Germany;Junior Suite;5;low;February;2;10205;4
+Elena;Hassan;Australia;Spa Executive;3;low;January;1;6987;2
+Carlos;Martinez;Canada;Superior Double;7;mid;May;5;12614;8
+Santiago;Dubois;Australia;Grand Lit;2;low;March;3;2454;2
+Zhang;Patel;Brazil;LOFT Suite;8;mid;May;5;26312;9
+Ingrid;Müller;Pakistan;Standard Double;6;mid;April;4;9066;7
+Fatima;Smith;Sweden;Standard Single;1;low;March;3;1162;1
+Lucas;Silva;Sweden;Grand Lit;1;mid;October;10;1448;1
+Chen;Ivanov;France;Grand Lit;8;mid;October;10;12624;9
+Fatima;Khan;Egypt;Standard Double;2;high;July;7;3268;3
+Olivia;Müller;China;Standard Single;9;high;June;6;12780;12
+Lucas;Rossi;South Korea;Superior Double;2;low;March;3;3218;2
+Muhammad;Nguyen;Canada;Junior Suite;10;low;February;2;18530;8
+Isabella;Olsen;Sweden;Spa Executive;1;low;January;1;2168;1
+Isabella;Khan;Australia;Grand Lit;4;high;June;6;5768;5
+Aisha;Ivanov;Pakistan;LOFT Suite;8;high;August;8;30464;10
+John;Ivanov;United States;Grand Lit;9;high;June;6;14175;12
+Zhang;Sato;India;LOFT Suite;7;high;June;6;25641;9
+Chen;Nguyen;Russia;Suite;9;mid;April;4;25992;10
+Ingrid;Garcia;South Korea;Standard Double;8;low;February;2;12120;6
+Maria;Johansson;India;Standard Single;6;mid;May;5;7464;7
+Sara;Brown;Mexico;LOFT Suite;8;high;June;6;30096;10
+Hiroshi;Lee;Mexico;Spa Executive;5;high;July;7;13820;7
+Maria;Garcia;Germany;LOFT Suite;4;mid;May;5;13296;4
+Elena;Nguyen;India;Suite;1;low;November;11;2717;1
+Muhammad;Garcia;Brazil;LOFT Suite;2;high;June;6;7670;3
+David;Sato;Spain;Standard Single;3;mid;May;5;3753;3
+Aisha;Khan;Italy;LOFT Suite;2;mid;September;9;7190;2
+Santiago;Hassan;Sweden;Standard Single;1;high;August;8;1387;1
+Zhang;Olsen;France;Spa Executive;2;mid;May;5;4792;2
+Maria;Lee;France;Grand Lit;5;low;February;2;5715;4
+Olivia;Lee;Nigeria;Standard Double;3;low;February;2;3951;2
+Chen;Nguyen;France;Grand Lit;3;low;November;11;3933;2
+Sara;Johansson;Mexico;LOFT Suite;4;high;June;6;15188;5
+Aisha;Müller;Pakistan;Spa Executive;9;low;November;11;18675;7
+Ahmed;Brown;South Korea;Grand Lit;10;low;January;1;12310;8
+Lucas;Silva;Canada;Standard Single;3;low;January;1;2808;2
+Olivia;Patel;Australia;Standard Single;4;low;December;12;4140;3
+Olivia;Garcia;France;LOFT Suite;4;low;November;11;13784;3
+Elena;Rossi;Nigeria;Spa Executive;10;high;July;7;26530;13
+Aisha;Brown;India;Superior Double;8;low;February;2;12504;6
+Chen;Silva;Sweden;Junior Suite;8;high;August;8;19576;10
+Ahmed;Olsen;United Kingdom;LOFT Suite;3;high;August;8;10515;4
+Liam;Patel;Nigeria;Junior Suite;6;low;February;2;11712;5
+Chen;Rossi;India;LOFT Suite;5;low;December;12;15530;4
+Lucas;Olsen;Australia;Superior Double;7;low;November;11;10311;6
+Elena;Olsen;Vietnam;Standard Single;6;high;June;6;7326;8
+Santiago;Brown;Italy;Superior Double;4;mid;April;4;7032;4
+Isabella;Dubois;Spain;Junior Suite;1;high;July;7;2397;1
+Maria;Kim;Nigeria;Spa Executive;8;low;December;12;16376;6
+Santiago;Kim;Canada;Standard Single;9;low;December;12;8280;7
+Ahmed;Yamamoto;Nigeria;Spa Executive;1;high;July;7;2597;1
+John;Johansson;Brazil;Junior Suite;6;high;July;7;14706;8
+Hiroshi;Brown;Spain;Standard Double;10;high;August;8;17770;13
+Chen;Müller;United States;Suite;1;low;January;1;2610;1
+John;Ivanov;South Korea;Junior Suite;10;low;November;11;20590;8
+Zhang;Yamamoto;South Korea;LOFT Suite;5;high;July;7;19275;7
+Sophia;Smith;United Kingdom;Spa Executive;8;high;August;8;20560;10
+Lucas;Brown;Australia;Spa Executive;5;mid;May;5;11830;6
+David;Nguyen;Japan;Standard Single;7;high;August;8;9051;9
+Santiago;Johansson;Vietnam;LOFT Suite;8;high;July;7;28144;10
+Muhammad;Martinez;Sweden;Suite;10;low;November;11;25470;8
+David;Rossi;Russia;Standard Single;3;mid;October;10;3021;3
+Isabella;Rossi;Vietnam;Suite;10;low;November;11;29370;8
+Carlos;Ivanov;India;Standard Double;3;mid;April;4;5031;3
+Sara;Sato;Canada;Suite;10;low;November;11;27750;8
+Ahmed;Dubois;United Kingdom;Junior Suite;4;low;November;11;8692;3
+Fatima;Smith;France;Grand Lit;2;low;March;3;2606;2
+Chen;Brown;China;Spa Executive;5;low;December;12;11150;4
+Fatima;Yamamoto;India;Superior Double;8;low;March;3;12864;6
+Hiroshi;Lee;Mexico;Junior Suite;3;mid;May;5;6633;3
+Santiago;Brown;Mexico;Spa Executive;3;mid;May;5;7404;3
+Isabella;Lee;Germany;Spa Executive;9;low;November;11;20295;7
+Fatima;Sato;Sweden;LOFT Suite;10;high;July;7;39450;13
+Sophia;Dubois;Brazil;Suite;7;low;December;12;19558;6
+Sara;Kim;United Kingdom;Suite;8;high;June;6;24032;10
+Isabella;Johansson;Australia;Standard Double;1;high;July;7;1838;1
+John;Brown;Egypt;Suite;3;mid;April;4;9603;3
+Hiroshi;Olsen;Nigeria;Spa Executive;5;high;June;6;12720;7
+Aisha;Olsen;Mexico;Suite;5;high;August;8;16845;7
+Sara;Smith;Italy;LOFT Suite;4;high;August;8;14504;5
+Zhang;Kim;United Kingdom;Spa Executive;10;low;December;12;20280;8
+Elena;Johansson;India;Superior Double;5;high;June;6;10005;7
+Aisha;Khan;Spain;Junior Suite;8;mid;September;9;18696;9
+Ahmed;Dubois;Canada;Superior Double;5;high;August;8;10260;7
+Hiroshi;Kim;Italy;Standard Single;6;mid;April;4;6156;7
+Sophia;Dubois;Nigeria;Superior Double;3;mid;October;10;5748;3
+Carlos;Sato;Spain;Spa Executive;7;low;December;12;16646;6
+Sophia;Brown;Sweden;Grand Lit;6;low;January;1;6828;5
+Santiago;Müller;United States;Junior Suite;8;high;August;8;19048;10
+Ahmed;Patel;United States;Standard Single;2;mid;October;10;2206;2
+Sara;Schneider;India;Standard Single;8;high;July;7;10096;10
+David;Dubois;Russia;LOFT Suite;6;mid;April;4;22218;7
+Hiroshi;Silva;Canada;LOFT Suite;7;low;March;3;24241;6
+Ahmed;Garcia;Australia;Spa Executive;8;high;July;7;21496;10
+Sara;Nguyen;Japan;Standard Single;5;high;June;6;6415;7
+Maria;Müller;Canada;Junior Suite;9;high;June;6;21150;12
+Ahmed;Olsen;Sweden;Standard Double;4;high;August;8;7420;5
+Ahmed;Yamamoto;United Kingdom;Grand Lit;7;mid;September;9;8624;8
+John;Patel;Brazil;Superior Double;2;mid;September;9;3994;2
+Carlos;Schneider;Pakistan;LOFT Suite;9;low;February;2;27729;7
+Chen;Johansson;India;LOFT Suite;3;low;January;1;9027;2
+Maria;Ivanov;Vietnam;Superior Double;6;low;December;12;10746;5
+Carlos;Lee;Nigeria;Suite;8;low;November;11;22160;6
+David;Rossi;Egypt;Superior Double;2;high;July;7;4082;3
+John;Silva;Germany;Standard Double;3;high;July;7;5817;4
+Muhammad;Garcia;South Korea;Junior Suite;3;high;June;6;7149;4
+Olivia;Lee;Spain;Suite;3;high;August;8;9171;4
+Lucas;Lee;Japan;Superior Double;3;high;June;6;5907;4
+Sophia;Sato;United States;Standard Double;8;mid;May;5;10464;9
+Lucas;Müller;Egypt;Standard Double;8;low;January;1;12240;6
+Lucas;Nguyen;South Korea;Suite;10;mid;April;4;31110;11
+Olivia;Schneider;Australia;Standard Double;7;mid;October;10;10584;8
+John;Yamamoto;South Korea;Spa Executive;4;mid;October;10;9000;4
+Maria;Garcia;Brazil;Spa Executive;7;high;July;7;19446;9
+Fatima;Martinez;Sweden;Standard Single;4;mid;October;10;4688;4
+Chen;Johansson;France;Spa Executive;4;mid;April;4;9844;4
+Zhang;Kim;United States;Standard Double;1;high;June;6;1936;1
+Liam;Brown;Mexico;Suite;10;high;August;8;31530;13
+Lucas;Nguyen;Vietnam;Superior Double;9;mid;September;9;17424;10
+Ingrid;Lee;Germany;Standard Double;9;low;February;2;11871;7
+Olivia;Johansson;South Korea;Standard Double;8;low;November;11;11552;6
+Isabella;Brown;Brazil;Standard Single;1;high;July;7;1434;1
+Fatima;Smith;China;LOFT Suite;5;mid;September;9;17655;6
+Elena;Hassan;Spain;Suite;2;low;March;3;5816;2
+Zhang;Schneider;Japan;Standard Double;9;mid;October;10;13500;10
+Liam;Yamamoto;Spain;Standard Single;4;high;July;7;5756;5
+John;Lee;Canada;Standard Double;5;high;August;8;8245;7
+Aisha;Lee;Sweden;Standard Single;4;mid;April;4;4208;4
+David;Nguyen;Vietnam;LOFT Suite;3;high;July;7;11844;4
+Hiroshi;Lee;Russia;Spa Executive;3;mid;April;4;7020;3
+Ahmed;Rossi;South Korea;Standard Single;8;low;November;11;8160;6
+Sophia;Müller;China;Standard Single;10;low;March;3;9240;8
+Carlos;Dubois;Canada;Suite;6;low;November;11;17916;5
+Fatima;Martinez;Pakistan;Junior Suite;9;high;June;6;22176;12
+David;Garcia;Germany;Spa Executive;10;mid;October;10;24560;11
+John;Lee;Australia;Superior Double;9;mid;October;10;14229;10
+Liam;Yamamoto;India;Junior Suite;1;low;March;3;1886;1
+Carlos;Dubois;United States;Superior Double;4;high;August;8;7740;5
+Muhammad;Patel;Canada;Standard Single;3;mid;May;5;3027;3
+Hiroshi;Nguyen;Australia;Spa Executive;7;high;August;8;18417;9
+Liam;Kim;India;Grand Lit;4;high;July;7;6060;5
+John;Nguyen;Germany;Standard Single;2;low;December;12;2212;2
+David;Sato;United States;Junior Suite;4;mid;April;4;8640;4
+Elena;Dubois;Italy;LOFT Suite;2;low;March;3;6712;2
+Liam;Silva;Spain;Spa Executive;10;mid;April;4;24170;11
+Muhammad;Khan;United Kingdom;Grand Lit;9;low;March;3;10008;7
+Olivia;Nguyen;Brazil;Standard Double;8;mid;May;5;11208;9
+Maria;Garcia;Sweden;Superior Double;6;high;June;6;11496;8
+Fatima;Müller;Germany;Superior Double;4;high;August;8;7824;5
+Sara;Rossi;Vietnam;Junior Suite;9;mid;October;10;18594;10
+Carlos;Dubois;China;Junior Suite;5;mid;April;4;10475;6
+Elena;Yamamoto;India;Standard Single;2;mid;October;10;2596;2
+Aisha;Lee;Canada;LOFT Suite;1;high;August;8;3739;1
+Ingrid;Brown;Vietnam;Grand Lit;7;mid;April;4;10724;8
+Ingrid;Johansson;France;Suite;7;low;March;3;19432;6
+Muhammad;Sato;Vietnam;Standard Single;6;low;January;1;6660;5
+Ingrid;Rossi;Sweden;Suite;3;high;August;8;9555;4
+Chen;Dubois;Russia;LOFT Suite;1;high;June;6;3598;1
+Santiago;Sato;Russia;Superior Double;7;low;March;3;10052;6
+Lucas;Nguyen;Pakistan;Grand Lit;5;mid;September;9;6090;6
+Santiago;Schneider;United States;Grand Lit;2;low;February;2;2384;2
+Aisha;Patel;Vietnam;Suite;9;low;November;11;23958;7
+Sara;Garcia;China;Suite;2;mid;September;9;6172;2
+Maria;Nguyen;Russia;Standard Single;8;mid;September;9;8152;9
+Muhammad;Smith;Sweden;Suite;7;high;August;8;23541;9
+David;Schneider;Russia;Standard Double;9;high;July;7;15084;12
+Fatima;Smith;United Kingdom;Spa Executive;7;mid;April;4;16576;8
+Chen;Olsen;France;Junior Suite;4;mid;April;4;8784;4
+Elena;Khan;Russia;LOFT Suite;1;low;December;12;3094;1
+Zhang;Müller;South Korea;Suite;9;high;August;8;27072;12
+Elena;Silva;Mexico;LOFT Suite;6;high;July;7;22974;8
+Santiago;Dubois;China;Grand Lit;7;high;August;8;11004;9
+Muhammad;Kim;Italy;Superior Double;10;high;August;8;21110;13
+Isabella;Khan;Brazil;Superior Double;3;high;July;7;5721;4
+Carlos;Silva;Vietnam;LOFT Suite;2;low;January;1;6208;2
+Chen;Yamamoto;India;Standard Double;8;low;November;11;11544;6
+Ahmed;Lee;India;Standard Double;4;low;March;3;6356;3
+Ahmed;Martinez;Vietnam;Grand Lit;1;high;June;6;1441;1
+Olivia;Yamamoto;Russia;Grand Lit;9;low;January;1;10629;7
+Ingrid;Rossi;Spain;Suite;4;high;July;7;13932;5
+Santiago;Johansson;South Korea;Grand Lit;4;high;July;7;6444;5
+Liam;Khan;Russia;Standard Single;9;high;June;6;11610;12
+Sara;Smith;Sweden;LOFT Suite;1;mid;May;5;3357;1
+Isabella;Olsen;Germany;Standard Double;7;low;March;3;10514;6
+Sara;Dubois;Sweden;LOFT Suite;9;mid;May;5;29547;10
+Muhammad;Sato;France;Superior Double;4;high;August;8;8256;5
+Hiroshi;Olsen;Sweden;Suite;2;low;December;12;5198;2
+Ingrid;Olsen;South Korea;Standard Single;10;mid;April;4;11520;11
+Olivia;Silva;Sweden;LOFT Suite;2;high;July;7;7506;3
+Liam;Johansson;South Korea;Spa Executive;4;high;August;8;10696;5
+Chen;Lee;United Kingdom;Standard Double;6;low;March;3;8592;5
+Ahmed;Martinez;Brazil;Superior Double;2;high;August;8;3926;3
+Elena;Martinez;United States;Junior Suite;8;low;December;12;16344;6
+Hiroshi;Garcia;India;LOFT Suite;6;mid;October;10;22596;7
+Hiroshi;Hassan;France;LOFT Suite;9;mid;May;5;29286;10
+Hiroshi;Schneider;India;Junior Suite;4;low;November;11;8004;3
+Maria;Olsen;Canada;Junior Suite;8;mid;April;4;16392;9
+Elena;Lee;Egypt;Suite;5;mid;April;4;14425;6
+Olivia;Olsen;Spain;Standard Single;10;low;February;2;11160;8
+Hiroshi;Garcia;United States;Spa Executive;2;low;February;2;4926;2
+Aisha;Müller;Spain;Suite;7;low;November;11;20531;6
+Muhammad;Brown;Germany;Standard Double;8;high;June;6;13496;10
+Maria;Brown;China;Junior Suite;10;low;December;12;20140;8
+Liam;Garcia;South Korea;Grand Lit;5;mid;May;5;7570;6
+Zhang;Lee;China;Superior Double;6;mid;October;10;9066;7
+Ingrid;Sato;France;Spa Executive;1;low;January;1;2087;1
+Elena;Kim;Mexico;Suite;3;low;March;3;7560;2
+Aisha;Patel;United Kingdom;Grand Lit;8;high;August;8;12872;10
+Lucas;Schneider;South Korea;LOFT Suite;2;high;July;7;7062;3
+John;Khan;France;Standard Single;2;high;July;7;2608;3
+Santiago;Kim;Canada;Standard Single;9;low;December;12;9531;7
+Hiroshi;Schneider;United States;Standard Double;9;low;March;3;11070;7
+Liam;Khan;Mexico;Spa Executive;1;mid;April;4;2446;1
+Carlos;Martinez;Australia;Spa Executive;4;low;January;1;9288;3
+Aisha;Hassan;China;Superior Double;9;mid;September;9;15291;10
+Lucas;Garcia;Spain;Suite;4;low;March;3;10792;3
+Santiago;Olsen;Germany;Suite;2;mid;April;4;6452;2
+Ahmed;Johansson;Australia;Spa Executive;6;mid;September;9;14532;7
+John;Sato;France;Superior Double;8;low;March;3;14120;6
+Fatima;Silva;Spain;Junior Suite;6;mid;April;4;13854;7
+Hiroshi;Patel;France;Junior Suite;9;mid;September;9;20268;10
+Carlos;Dubois;South Korea;Spa Executive;5;mid;May;5;11860;6
+Fatima;Garcia;South Korea;Suite;8;mid;May;5;22616;9
+Chen;Kim;Nigeria;Spa Executive;8;high;July;7;21816;10
+Ahmed;Johansson;Nigeria;Spa Executive;9;high;June;6;22581;12
+John;Dubois;Germany;Standard Single;10;mid;September;9;11000;11
+David;Schneider;United Kingdom;Junior Suite;7;mid;October;10;15708;8
+Liam;Ivanov;Pakistan;Grand Lit;3;low;November;11;3885;2
+Santiago;Lee;Japan;Junior Suite;8;high;July;7;18088;10
+John;Sato;Vietnam;Grand Lit;2;low;February;2;2288;2
+Maria;Nguyen;France;Superior Double;6;high;July;7;11022;8
+Lucas;Silva;France;LOFT Suite;10;mid;May;5;36090;11
+Isabella;Müller;Nigeria;Spa Executive;6;low;February;2;12840;5
+Sara;Schneider;South Korea;Standard Double;8;low;November;11;12368;6
+Ahmed;Kim;Japan;Suite;2;high;June;6;6496;3
+Hiroshi;Khan;Brazil;Junior Suite;4;high;July;7;9264;5
+Ingrid;Olsen;Germany;Grand Lit;5;high;August;8;7430;7
+Zhang;Hassan;Italy;Spa Executive;8;high;June;6;20624;10
+Fatima;Schneider;Russia;Standard Double;5;low;January;1;6360;4
+Zhang;Kim;United Kingdom;Superior Double;10;low;February;2;15410;8
+Muhammad;Sato;United Kingdom;Superior Double;7;mid;May;5;13832;8
+Lucas;Khan;Sweden;Spa Executive;1;low;November;11;2102;1
+Hiroshi;Khan;France;Superior Double;8;low;January;1;11976;6
+Sophia;Schneider;United Kingdom;Junior Suite;10;mid;May;5;21370;11
+Zhang;Schneider;Japan;Grand Lit;10;low;February;2;12490;8
+Lucas;Johansson;Canada;Junior Suite;1;mid;October;10;2260;1
+Maria;Garcia;Sweden;Spa Executive;7;high;August;8;18284;9
+Santiago;Khan;Italy;Spa Executive;7;mid;May;5;16163;8
+Fatima;Dubois;Italy;Superior Double;8;low;February;2;14248;6
+Fatima;Hassan;Egypt;Standard Double;9;high;August;8;15885;12
+Zhang;Schneider;Germany;LOFT Suite;4;low;December;12;13108;3
+Santiago;Kim;Brazil;Suite;3;mid;October;10;9030;3
+Sophia;Patel;India;Standard Single;9;mid;September;9;10278;10
+Ingrid;Müller;Mexico;Suite;6;low;March;3;15564;5
+Muhammad;Patel;Italy;Spa Executive;6;high;August;8;16326;8
+Lucas;Garcia;Egypt;Standard Double;2;low;December;12;2646;2
+Lucas;Lee;Italy;Superior Double;5;mid;April;4;7845;6
+Maria;Garcia;Russia;Suite;2;high;August;8;6592;3
+Fatima;Patel;Brazil;Junior Suite;6;mid;October;10;14322;7
+Olivia;Müller;Russia;Junior Suite;2;mid;April;4;4028;2
+Ingrid;Nguyen;Pakistan;Grand Lit;8;high;June;6;14224;10
+Maria;Smith;Spain;LOFT Suite;8;high;August;8;28600;10
+Olivia;Silva;France;Suite;10;low;November;11;29710;8
+Ingrid;Dubois;South Korea;Standard Single;7;low;January;1;6902;6
+Olivia;Lee;Pakistan;Standard Single;6;mid;October;10;6966;7
+John;Hassan;Nigeria;Superior Double;1;low;November;11;1615;1
+Lucas;Smith;United States;Superior Double;2;mid;May;5;3566;2
+Liam;Yamamoto;United Kingdom;Grand Lit;1;high;July;7;1772;1
+Aisha;Martinez;China;Grand Lit;7;low;February;2;8883;6
+David;Lee;Australia;Junior Suite;9;high;July;7;20925;12
+Ahmed;Olsen;United Kingdom;Standard Double;10;mid;September;9;14690;11
+Isabella;Smith;Germany;Standard Double;4;low;March;3;5556;3
+Ingrid;Yamamoto;Brazil;Suite;9;mid;April;4;27738;10
+Ahmed;Schneider;Sweden;Junior Suite;7;low;March;3;14091;6
+Olivia;Johansson;France;Superior Double;5;mid;May;5;9055;6
+Liam;Sato;Italy;Superior Double;7;mid;May;5;13272;8
+Liam;Patel;United States;Standard Double;3;low;November;11;4359;2
+Sara;Johansson;Germany;Standard Double;10;mid;September;9;16540;11
+Maria;Garcia;Canada;LOFT Suite;2;high;June;6;7188;3
+Olivia;Silva;United Kingdom;Spa Executive;2;low;January;1;4992;2
+Elena;Sato;India;LOFT Suite;6;low;March;3;19608;5
+Hiroshi;Müller;China;Superior Double;4;high;August;8;7228;5
+Carlos;Silva;Egypt;Junior Suite;9;high;July;7;21285;12
+John;Kim;Japan;Junior Suite;2;high;August;8;4780;3
+Olivia;Schneider;Australia;Standard Single;8;low;February;2;9360;6
+Ingrid;Ivanov;United Kingdom;Spa Executive;3;low;March;3;6552;2
+John;Olsen;Sweden;Grand Lit;9;high;July;7;13050;12
+Santiago;Johansson;Italy;Standard Double;10;high;June;6;18920;13
+Sophia;Sato;Canada;Standard Double;6;mid;April;4;9276;7
+Zhang;Garcia;Egypt;Junior Suite;1;high;July;7;2257;1
+Santiago;Olsen;South Korea;Standard Double;5;low;November;11;7565;4
+Lucas;Rossi;France;LOFT Suite;2;high;July;7;7522;3
+Sara;Smith;South Korea;Grand Lit;5;mid;May;5;6395;6
+Ahmed;Rossi;Vietnam;Suite;1;mid;May;5;3217;1
+Lucas;Johansson;United Kingdom;LOFT Suite;1;low;December;12;3245;1
+John;Nguyen;Mexico;Suite;1;low;March;3;2951;1
+Isabella;Khan;Mexico;Standard Double;1;low;March;3;1575;1
+Ahmed;Ivanov;United States;Standard Double;6;high;June;6;10230;8
+Ingrid;Silva;Russia;Standard Single;8;high;August;8;11672;10
+David;Brown;United States;Spa Executive;9;mid;April;4;23229;10
+Lucas;Hassan;Canada;Junior Suite;5;high;July;7;11940;7
+Isabella;Khan;India;Junior Suite;3;mid;May;5;6489;3
+Hiroshi;Yamamoto;United States;Superior Double;2;mid;May;5;3194;2
+Isabella;Müller;Vietnam;Standard Double;1;mid;September;9;1311;1
+Ingrid;Rossi;Australia;Spa Executive;8;mid;May;5;19584;9
+Olivia;Sato;Pakistan;Standard Double;6;high;August;8;11442;8
+Liam;Johansson;Egypt;Grand Lit;9;low;November;11;10089;7
+Sophia;Johansson;United Kingdom;LOFT Suite;9;high;June;6;33300;12
+Hiroshi;Johansson;Nigeria;Superior Double;7;low;November;11;11725;6
+Lucas;Kim;Sweden;Standard Single;6;low;March;3;6138;5
+David;Brown;South Korea;Standard Double;3;high;August;8;5832;4
+John;Martinez;Germany;Junior Suite;5;high;June;6;12385;7
+John;Müller;Italy;Suite;10;low;January;1;29760;8
+David;Dubois;Japan;Suite;2;high;July;7;6068;3
+Ingrid;Hassan;Russia;Suite;10;low;January;1;26130;8
+Aisha;Olsen;Sweden;Superior Double;2;high;August;8;4198;3
+Muhammad;Schneider;Pakistan;Suite;3;low;February;2;7917;2
+Santiago;Dubois;Italy;Standard Single;10;high;August;8;12450;13
+Sara;Patel;Spain;LOFT Suite;3;high;August;8;11067;4
+Santiago;Rossi;Russia;Spa Executive;6;low;January;1;14898;5
+John;Rossi;Brazil;Spa Executive;6;mid;April;4;14118;7
+Sara;Olsen;South Korea;Junior Suite;4;mid;October;10;9340;4
+Elena;Yamamoto;Germany;Standard Double;4;mid;April;4;6384;4
+Maria;Yamamoto;Spain;Superior Double;10;low;March;3;15490;8
+Hiroshi;Dubois;Nigeria;Suite;2;low;February;2;5690;2
+Fatima;Martinez;France;Superior Double;2;low;March;3;3568;2
+Sophia;Smith;Russia;Suite;7;low;December;12;17717;6
+Ingrid;Dubois;Russia;Junior Suite;4;high;July;7;9248;5
+Ahmed;Ivanov;India;Superior Double;10;mid;April;4;15820;11
+Isabella;Hassan;Germany;Spa Executive;3;mid;October;10;7260;3
+Ingrid;Yamamoto;Mexico;Standard Double;6;high;August;8;10872;8
+Muhammad;Sato;Russia;Junior Suite;7;low;January;1;14616;6
+Elena;Kim;Italy;Junior Suite;6;mid;May;5;12618;7
+Liam;Müller;Italy;Standard Single;4;high;July;7;5184;5
+Santiago;Schneider;Egypt;Suite;1;mid;September;9;2933;1
+Lucas;Hassan;Spain;Junior Suite;4;mid;September;9;8880;4
+Elena;Garcia;South Korea;Spa Executive;10;high;June;6;25820;13
+Sophia;Rossi;France;Grand Lit;2;mid;October;10;3160;2
+Ahmed;Silva;China;Standard Single;8;low;March;3;9256;6
+Carlos;Nguyen;United Kingdom;Standard Single;10;high;August;8;13990;13
+Hiroshi;Johansson;Japan;Superior Double;10;low;December;12;17310;8
+Ahmed;Schneider;Sweden;Suite;3;low;December;12;7704;2
+Muhammad;Brown;Italy;Spa Executive;8;mid;May;5;19832;9
+Sophia;Martinez;Brazil;Spa Executive;5;mid;October;10;11875;6
+Hiroshi;Müller;Australia;Standard Single;3;high;June;6;4449;4
+Ahmed;Müller;France;Spa Executive;2;mid;September;9;5182;2
+John;Martinez;Italy;Standard Single;4;low;December;12;3648;3
+Aisha;Schneider;United Kingdom;Junior Suite;2;mid;October;10;4180;2
+Fatima;Dubois;Vietnam;Junior Suite;3;mid;October;10;7116;3
+Zhang;Kim;Australia;Spa Executive;6;low;January;1;14580;5
+Isabella;Rossi;China;LOFT Suite;2;high;June;6;7992;3
+Santiago;Martinez;China;Spa Executive;3;low;December;12;6156;2
+David;Smith;Italy;Junior Suite;7;mid;May;5;14644;8
+Olivia;Hassan;Brazil;Junior Suite;3;low;December;12;6510;2
+Sophia;Silva;Mexico;Grand Lit;10;mid;May;5;14090;11
+Fatima;Yamamoto;Australia;Junior Suite;2;high;August;8;4708;3
+Lucas;Smith;Japan;Spa Executive;4;mid;April;4;8948;4
+Fatima;Lee;India;Superior Double;5;high;June;6;10880;7
+Sophia;Dubois;India;Standard Double;6;mid;October;10;9084;7
+Santiago;Lee;Brazil;Junior Suite;4;low;January;1;7824;3
+Olivia;Smith;United Kingdom;Suite;10;high;July;7;33550;13
+Carlos;Martinez;Brazil;Junior Suite;2;low;February;2;4028;2
+Ahmed;Dubois;France;Suite;1;low;February;2;2860;1
+Zhang;Hassan;China;Grand Lit;8;low;January;1;9064;6
+Hiroshi;Brown;Mexico;Standard Double;4;low;February;2;5252;3
+Muhammad;Nguyen;France;Standard Single;2;mid;September;9;2454;2
+Hiroshi;Hassan;Egypt;Standard Single;4;mid;September;9;5076;4
+Maria;Ivanov;Nigeria;Grand Lit;2;high;July;7;3570;3
+Olivia;Lee;Brazil;Spa Executive;4;mid;September;9;9668;4
+Olivia;Schneider;France;Suite;2;mid;September;9;6586;2
+Carlos;Sato;China;LOFT Suite;6;mid;October;10;21186;7
+Sara;Olsen;Russia;Suite;6;low;February;2;17136;5
+Ingrid;Müller;United States;Grand Lit;1;high;August;8;1660;1
+John;Dubois;India;Superior Double;9;mid;April;4;16461;10
+Sara;Khan;Pakistan;Standard Single;7;mid;May;5;7707;8
+Isabella;Schneider;Brazil;Standard Double;6;mid;April;4;9864;7
+Carlos;Hassan;Pakistan;LOFT Suite;10;mid;September;9;34080;11
+Santiago;Yamamoto;United Kingdom;Suite;4;mid;September;9;12280;4
+Muhammad;Nguyen;United States;Grand Lit;3;low;November;11;4143;2
+Carlos;Sato;Pakistan;Spa Executive;1;low;January;1;2088;1
+Sara;Nguyen;France;Superior Double;6;low;March;3;10626;5
+David;Brown;Mexico;Grand Lit;9;mid;April;4;13923;10
+Chen;Rossi;Italy;Suite;7;mid;September;9;21378;8
+Sophia;Nguyen;Italy;LOFT Suite;10;high;July;7;36450;13
+Muhammad;Müller;Vietnam;Superior Double;9;high;July;7;17739;12
+John;Brown;China;Standard Single;4;mid;May;5;4600;4
+Ingrid;Garcia;Canada;LOFT Suite;5;high;June;6;19675;7
+Maria;Müller;Brazil;Spa Executive;3;mid;October;10;7398;3
+Elena;Johansson;South Korea;LOFT Suite;2;mid;September;9;6684;2
+Lucas;Martinez;Sweden;Superior Double;9;low;February;2;13752;7
+Sara;Garcia;Russia;Spa Executive;1;mid;September;9;2208;1
+David;Patel;India;Grand Lit;1;high;June;6;1752;1
+Ingrid;Sato;Germany;Junior Suite;2;mid;April;4;4304;2
+Aisha;Dubois;Mexico;Standard Double;7;high;June;6;11795;9
+Lucas;Ivanov;United Kingdom;Spa Executive;7;high;July;7;18977;9
+Ahmed;Patel;Vietnam;Superior Double;10;high;June;6;18950;13
+Lucas;Schneider;France;Superior Double;6;high;June;6;11022;8
+Aisha;Patel;Spain;LOFT Suite;3;mid;October;10;10668;3
+Ingrid;Ivanov;Canada;Suite;5;low;February;2;14450;4
+Isabella;Hassan;India;Suite;5;high;July;7;16170;7
+Ahmed;Lee;Vietnam;LOFT Suite;3;mid;April;4;10359;3
+Isabella;Johansson;Russia;LOFT Suite;3;mid;May;5;10506;3
+Elena;Sato;Sweden;Standard Double;3;low;December;12;4455;2
+David;Khan;India;Standard Single;5;mid;September;9;6030;6
+Zhang;Olsen;Germany;Spa Executive;5;mid;May;5;11365;6
+Hiroshi;Schneider;South Korea;Spa Executive;5;high;July;7;12805;7
+Aisha;Müller;India;Superior Double;7;high;July;7;14378;9
+Aisha;Johansson;Nigeria;LOFT Suite;1;low;January;1;3245;1
+Hiroshi;Silva;France;Spa Executive;8;mid;September;9;20448;9
+Zhang;Silva;Mexico;Standard Double;4;high;June;6;7892;5
+Olivia;Ivanov;Vietnam;Junior Suite;4;high;August;8;9708;5
+John;Dubois;Mexico;LOFT Suite;10;mid;April;4;34480;11
+Liam;Martinez;Vietnam;Standard Double;10;low;January;1;13450;8
+Olivia;Brown;Egypt;Standard Single;1;high;June;6;1498;1
+Muhammad;Martinez;Nigeria;Suite;6;high;July;7;19554;8
+Lucas;Khan;Germany;Grand Lit;5;mid;April;4;7760;6
+Olivia;Khan;India;Junior Suite;10;mid;April;4;23600;11
+Ahmed;Johansson;Australia;Spa Executive;1;low;February;2;2102;1
+Aisha;Martinez;China;Superior Double;8;high;July;7;15440;10
+Fatima;Olsen;Spain;Junior Suite;9;high;June;6;20943;12
+Zhang;Garcia;Russia;Superior Double;7;high;August;8;12740;9
+Liam;Garcia;Brazil;Suite;10;high;July;7;34110;13
+Olivia;Ivanov;Mexico;Junior Suite;5;high;July;7;11220;7
+Elena;Sato;United Kingdom;Junior Suite;9;mid;May;5;19548;10
+Hiroshi;Olsen;Brazil;Junior Suite;8;low;March;3;17016;6
+Santiago;Sato;Brazil;Superior Double;5;high;June;6;10945;7
+David;Smith;United States;Grand Lit;6;low;January;1;7284;5
+Zhang;Garcia;Australia;Superior Double;8;mid;September;9;13608;9
+John;Khan;Japan;Suite;9;high;August;8;30411;12
+Sara;Lee;South Korea;Standard Single;6;high;July;7;8448;8
+Ahmed;Garcia;South Korea;Superior Double;4;high;August;8;7308;5
+Hiroshi;Johansson;Vietnam;Spa Executive;6;mid;May;5;15096;7
+Lucas;Olsen;United Kingdom;Standard Single;7;high;June;6;9898;9
+Liam;Hassan;Spain;Spa Executive;3;low;February;2;6546;2
+Sara;Müller;China;Standard Single;1;high;July;7;1218;1
+Liam;Garcia;Russia;Grand Lit;7;mid;October;10;9359;8
+Elena;Khan;Italy;Standard Double;8;mid;May;5;10504;9
+Liam;Rossi;India;Standard Double;10;low;February;2;14050;8
+Carlos;Ivanov;Germany;Junior Suite;1;mid;October;10;2210;1
+Chen;Rossi;Russia;Standard Single;3;mid;October;10;3252;3
+Olivia;Garcia;Germany;Spa Executive;3;mid;May;5;7482;3
+Zhang;Dubois;Pakistan;Junior Suite;6;high;June;6;14508;8
+Isabella;Lee;South Korea;Superior Double;6;high;June;6;11892;8
+Ahmed;Sato;Canada;Spa Executive;9;high;July;7;24867;12
+Chen;Nguyen;Pakistan;Junior Suite;6;low;January;1;10986;5
+David;Brown;Pakistan;Spa Executive;1;low;March;3;2109;1
+Zhang;Nguyen;United Kingdom;Standard Double;6;low;February;2;8814;5
+Sara;Nguyen;France;Suite;3;high;June;6;9456;4
+Olivia;Khan;Australia;Suite;1;high;June;6;3324;1
+Zhang;Sato;France;LOFT Suite;3;mid;May;5;10404;3
+Elena;Garcia;Mexico;Grand Lit;6;high;July;7;9216;8
+Olivia;Brown;India;Suite;2;high;August;8;6922;3
+David;Dubois;Spain;Suite;4;high;July;7;12696;5
+John;Kim;Brazil;Standard Double;1;low;November;11;1479;1
+Hiroshi;Kim;Canada;Suite;3;high;August;8;9210;4
+Zhang;Schneider;Nigeria;Grand Lit;4;low;December;12;5244;3
+Carlos;Brown;France;Suite;4;low;December;12;11428;3
+Liam;Rossi;United Kingdom;Junior Suite;1;high;June;6;2220;1
+Zhang;Martinez;Sweden;Superior Double;2;low;February;2;3484;2
+Sara;Nguyen;Sweden;Grand Lit;10;high;July;7;14520;13
+Zhang;Kim;Russia;Spa Executive;7;low;December;12;16128;6
+Aisha;Martinez;South Korea;Spa Executive;4;low;January;1;8768;3
+Liam;Khan;United States;Suite;5;high;July;7;16015;7
+Santiago;Rossi;Sweden;Junior Suite;10;mid;October;10;21350;11
+Carlos;Silva;Sweden;Grand Lit;7;high;August;8;10535;9
+Chen;Brown;China;Spa Executive;9;high;June;6;23553;12
+Hiroshi;Martinez;Spain;Grand Lit;1;mid;October;10;1210;1
+Maria;Garcia;Italy;Grand Lit;7;mid;May;5;9408;8
+Sophia;Brown;United Kingdom;Junior Suite;3;high;August;8;6816;4
+Olivia;Martinez;Japan;Spa Executive;8;mid;April;4;19192;9
+Ingrid;Smith;Canada;Grand Lit;6;mid;April;4;9576;7
+Olivia;Ivanov;Australia;Spa Executive;6;high;June;6;15582;8
+Sara;Müller;Spain;Superior Double;4;low;February;2;6912;3
+Santiago;Rossi;Russia;Standard Single;1;high;July;7;1311;1
+Sara;Patel;Spain;Suite;4;mid;September;9;13176;4
+Chen;Garcia;Japan;Spa Executive;1;low;February;2;2095;1
+Hiroshi;Sato;China;Junior Suite;3;low;December;12;5733;2
+Sara;Rossi;China;Spa Executive;10;high;August;8;25490;13
+Aisha;Lee;Egypt;Spa Executive;10;mid;April;4;22210;11
+Ahmed;Martinez;Russia;Standard Double;7;low;January;1;10549;6
+Sara;Lee;Brazil;Superior Double;9;mid;October;10;16632;10
+John;Hassan;United Kingdom;Grand Lit;3;high;June;6;4938;4
+Sophia;Rossi;Japan;LOFT Suite;7;low;March;3;22155;6
+Sophia;Sato;Italy;Junior Suite;1;mid;April;4;2002;1
+Olivia;Yamamoto;Germany;Standard Double;9;low;December;12;13158;7
+Zhang;Müller;Mexico;Spa Executive;1;high;August;8;2588;1
+John;Smith;Spain;LOFT Suite;2;low;December;12;6102;2
+Olivia;Müller;Pakistan;Superior Double;9;high;August;8;16929;12
+Maria;Hassan;United Kingdom;Suite;6;mid;April;4;18684;7
+Hiroshi;Ivanov;Italy;Standard Single;3;high;June;6;4365;4
+Liam;Smith;Australia;Spa Executive;1;mid;September;9;2467;1
+Ahmed;Dubois;Pakistan;Suite;7;mid;May;5;22449;8
+Ahmed;Patel;Pakistan;Standard Single;5;high;June;6;6730;7
+Muhammad;Ivanov;Canada;Junior Suite;1;mid;October;10;2150;1
+Liam;Ivanov;Brazil;Standard Single;1;mid;October;10;1181;1
+Santiago;Müller;Pakistan;Junior Suite;1;mid;April;4;2262;1
+Ahmed;Smith;Brazil;Superior Double;9;mid;October;10;14769;10
+Aisha;Johansson;Japan;Grand Lit;1;low;November;11;1265;1
+Sophia;Dubois;Japan;LOFT Suite;10;low;November;11;34740;8
+Muhammad;Müller;China;Suite;7;mid;September;9;22561;8
+Aisha;Martinez;Germany;Suite;10;low;November;11;27230;8
+Olivia;Hassan;United States;Junior Suite;4;low;February;2;7952;3
+Aisha;Silva;South Korea;Superior Double;5;high;August;8;10005;7
+Ingrid;Kim;Brazil;Standard Double;10;high;August;8;17330;13
+Santiago;Olsen;Canada;Spa Executive;7;high;June;6;18753;9
+Olivia;Brown;China;Suite;1;high;June;6;3195;1
+Zhang;Garcia;South Korea;LOFT Suite;9;mid;September;9;30096;10
+Olivia;Martinez;Egypt;Junior Suite;10;mid;April;4;20270;11
+Chen;Yamamoto;Mexico;LOFT Suite;2;mid;April;4;7008;2
+Zhang;Brown;Russia;Superior Double;1;high;June;6;1912;1
+Muhammad;Hassan;South Korea;Standard Double;4;low;February;2;5040;3
+Muhammad;Schneider;Australia;Junior Suite;3;low;November;11;6228;2
+Sara;Johansson;Germany;Grand Lit;10;mid;September;9;15030;11
+Aisha;Yamamoto;Australia;Spa Executive;6;mid;April;4;14706;7
+Zhang;Martinez;South Korea;Spa Executive;5;high;June;6;12985;7
+Sara;Ivanov;Australia;Spa Executive;8;low;November;11;16392;6
+Fatima;Rossi;Japan;Grand Lit;4;high;August;8;6320;5
+Sophia;Schneider;France;LOFT Suite;4;high;July;7;14084;5
+Olivia;Hassan;Russia;Spa Executive;1;low;January;1;2391;1
+Zhang;Rossi;Nigeria;Standard Double;6;high;June;6;11532;8
+Lucas;Silva;Japan;Spa Executive;3;mid;May;5;6819;3
+Sara;Hassan;South Korea;Spa Executive;1;mid;September;9;2218;1
+Santiago;Khan;Pakistan;LOFT Suite;2;mid;September;9;7340;2
+Ahmed;Yamamoto;Vietnam;Spa Executive;3;mid;April;4;6924;3
+Ingrid;Martinez;Brazil;Superior Double;5;high;August;8;10285;7
+Fatima;Kim;South Korea;Superior Double;9;low;November;11;15444;7
+Muhammad;Martinez;Nigeria;Standard Single;4;high;July;7;5792;5
+John;Sato;France;LOFT Suite;4;high;August;8;15144;5
+Carlos;Ivanov;China;Junior Suite;9;low;December;12;17163;7
+Ahmed;Martinez;India;Standard Double;1;high;July;7;1795;1
+Olivia;Müller;United Kingdom;Suite;3;high;August;8;9984;4
+Santiago;Hassan;Nigeria;Standard Double;1;low;March;3;1308;1
+David;Sato;Australia;Standard Double;8;mid;September;9;10920;9
+John;Hassan;Australia;Superior Double;6;low;December;12;8814;5
+Sophia;Schneider;Egypt;Grand Lit;6;low;December;12;7974;5
+Maria;Olsen;India;Suite;6;high;August;8;20808;8
+Maria;Dubois;Sweden;Standard Single;2;high;July;7;2588;3
+Liam;Patel;South Korea;LOFT Suite;6;low;November;11;20748;5
+Olivia;Müller;South Korea;Suite;9;mid;May;5;27873;10
+Ahmed;Garcia;Russia;Suite;7;high;June;6;24220;9
+Carlos;Silva;Sweden;Standard Single;3;mid;May;5;3651;3
+Ahmed;Kim;Vietnam;Superior Double;3;mid;October;10;5757;3
+Liam;Khan;Italy;Standard Double;4;low;November;11;4808;3
+Liam;Rossi;Canada;Suite;4;low;December;12;10740;3
+;;;;5379;;Unknown;#N/A;;5379
