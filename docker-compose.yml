@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  reservation:
+    build: ./services/reservation
+    ports:
+      - "5000:5000"
+
+  api-gateway:
+    build: ./api-gateway
+    environment:
+      RESERVATION_URL: http://reservation:5000
+    depends_on:
+      - reservation
+    ports:
+      - "8000:5000"
+
+  frontend:
+    build: ./frontend-streamlit
+    environment:
+      API_BASE: http://api-gateway:5000
+    depends_on:
+      - api-gateway
+    ports:
+      - "8501:8501"
