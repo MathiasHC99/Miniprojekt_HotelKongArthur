@@ -8,7 +8,7 @@ CSV_FILE = "../../NamesRoomsWithMonths4.csv"  # tilpas hvis sti er anderledes
 
 
 
-#Localhost URL for testing: http://localhost:5000/rooms/summary
+#Localhost URL for testing: http://localhost:5001/rooms/summary
 # Endpoints: 
 # rooms/
 # rooms/<int:room_id>
@@ -178,5 +178,6 @@ def create_room():
 if __name__ == "__main__":
     init_db()
     seed_from_csv()
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5001)
+
 

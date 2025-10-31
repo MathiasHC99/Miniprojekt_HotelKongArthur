@@ -7,7 +7,7 @@ DB_FILE = "bar.db"
 CSV_FILE = "../../drinks_menu_with_sales.csv"  # Tilpas sti efter behov
 
 
-# Endpoints til test: localhost:5000/
+# Endpoints til test: localhost:5002/
 # bar/drinks
 # bar/summary
 # bar/category/<string:category>
@@ -180,4 +180,5 @@ def search_drink():
 if __name__ == "__main__":
     init_db()
     seed_from_csv()
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5002)
+
