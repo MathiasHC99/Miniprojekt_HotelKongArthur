@@ -4,7 +4,7 @@ import sqlite3, pandas as pd, os
 app = Flask(__name__)
 
 DB_FILE = "bar.db"
-CSV_FILE = "../../drinks_menu_with_sales.csv"  # Tilpas sti efter behov
+CSV_FILE = "data/drinks_menu_with_sales.csv"  # Tilpas sti efter behov
 
 
 # Endpoints til test: localhost:5002/
@@ -173,6 +173,47 @@ def search_drink():
     df = pd.read_sql("SELECT * FROM drinks", conn)
     subset = df[df["drink_name"].str.lower().str.contains(query)]
     return jsonify(subset.to_dict(orient="records"))
+
+
+
+
+
+
+
+
+# ---------- HEALTH CHECK ----------
+from datetime import datetime
+import sqlite3, os
+
+@app.get("/health")
+def health_check_bar():
+    """Health check for Bar Service."""
+    db_status, record_count = False, 0
+    db_file = [f for f in os.listdir('.') if f.endswith('.db')]
+    if db_file:
+        try:
+            conn = sqlite3.connect(db_file[0])
+            cur = conn.cursor()
+            cur.execute("SELECT COUNT(*) FROM sqlite_master")
+            record_count = cur.fetchone()[0]
+            db_status = True
+        except Exception:
+            db_status = False
+        finally:
+            conn.close()
+
+    return jsonify({
+        "service": "bar_service",
+        "status": "ok",
+        "timestamp": datetime.utcnow().isoformat(),
+        "details": {"db_connected": db_status, "db_tables": record_count}
+    })
+
+
+
+
+
+
 
 
 # ---------- MAIN ----------

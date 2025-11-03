@@ -2,14 +2,24 @@ from flask import Flask, jsonify
 import requests
 import pandas as pd
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
-# URL’er til de andre microservices (ændres hvis Docker-compose bruges)
-ROOM_URL = "http://localhost:5001"
-BAR_URL = "http://localhost:5002"
-GUEST_URL = "http://localhost:5003"
-RES_URL = "http://localhost:5004"
+
+
+# Bruger Docker service-navne, men beholder fallback for lokal
+if os.path.exists("/.dockerenv"):
+    ROOM_URL = "http://room_service:5001"
+    BAR_URL = "http://bar_service:5002"
+    GUEST_URL = "http://guest_service:5003"
+    RES_URL = "http://reservation_service:5004"
+else:
+    ROOM_URL = "http://localhost:5001"
+    BAR_URL = "http://localhost:5002"
+    GUEST_URL = "http://localhost:5003"
+    RES_URL = "http://localhost:5004"
+
 
 # ---------- HJÆLPEFUNKTIONER ----------
 
@@ -44,8 +54,8 @@ def analytics_overview():
         "total_revenue_room": round(total_room, 2),
         "total_revenue_bar": round(total_bar, 2),
         "total_revenue_reservations": round(total_res, 2),
-        "total_guests": guest_data.get("total_guests", 0),
-        "top_countries": guest_data.get("by_country", {}),
+        "total_guests": guest_data.get("summary", {}).get("total_guests", 0),
+        "top_countries": guest_data.get("by_country") or guest_data.get("summary", {}).get("top_countries", {}),
         "avg_daily_rate": res_data.get("avg_daily_rate", 0),
         "avg_stay_days": res_data.get("avg_stay_days", 0),
         "top_room_types": res_data.get("top_room_types", {}),
@@ -92,8 +102,52 @@ def monthly_revenue():
     })
 
 
+
+
+
+
+
+
+
+
+
+
+from datetime import datetime
+import sqlite3, os
+
+
+# ---------- HEALTH CHECK ----------
+
+from datetime import datetime
+import requests
+
+@app.get("/analytics/health")
+def analytics_health():
+    """Health check for Analytics + afhængigheder."""
+    services = {
+        "room": ROOM_URL,
+        "bar": BAR_URL,
+        "guest": GUEST_URL,
+        "reservation": RES_URL
+    }
+
+    results = {}
+    for name, url in services.items():
+        try:
+            r = requests.get(f"{url}/health", timeout=5)
+            results[name] = "ok" if r.status_code == 200 else f"error ({r.status_code})"
+        except Exception as e:
+            results[name] = f"unreachable ({e})"
+
+    return jsonify({
+        "service": "analytics_service",
+        "timestamp": datetime.utcnow().isoformat(),
+        "dependencies": results
+    })
+
+
 # ---------- MAIN ----------
 
 if __name__ == "__main__":
     print("✅ Analytics service kører...")
-    app.run(host="0.0.0.0", port=5005)
+    app.run(host="0.0.0.0", port=5005, debug=False)

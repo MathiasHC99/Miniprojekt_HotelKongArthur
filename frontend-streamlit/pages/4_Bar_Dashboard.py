@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import requests
+from utils import API_BASE, fetch_json
 
 # ---------- KONFIG ----------
-st.set_page_config(page_title="🍸 Bar Dashboard – Hotel Kong Arthur", layout="wide")
-API_BAR = "http://localhost:8000/api/bar"
+st.set_page_config(page_title="Bar Dashboard – Hotel Kong Arthur", layout="wide")
+API_BAR = f"{API_BASE}/bar"
 
 # ---------- HJÆLPEFUNKTION ----------
 @st.cache_data(ttl=60)

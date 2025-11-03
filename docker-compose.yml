@@ -1,0 +1,89 @@
+version: "3.9"
+
+services:
+  room:
+    build: ./services/room
+    container_name: room_service
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "5001:5001"
+
+  bar:
+    build: ./services/bar
+    container_name: bar_service
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "5002:5002"
+
+  guest:
+    build: ./services/guest
+    container_name: guest_service
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "5003:5003"
+
+  reservation:
+    build: ./services/reservation
+    container_name: reservation_service
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "5004:5004"
+
+  analytics:
+    build: ./services/analytics
+    container_name: analytics_service
+    ports:
+      - "5005:5005"
+    depends_on:
+      - room
+      - bar
+      - guest
+      - reservation
+
+
+    #     analytics_service:
+    # build: ./services/analytics
+    # depends_on:
+    #   room_service:
+    #     condition: service_healthy
+    #   bar_service:
+    #     condition: service_healthy
+    #   guest_service:
+    #     condition: service_healthy
+    #   reservation_service:
+    #     condition: service_healthy
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:5005/analytics/health"]
+    #   interval: 10s
+    #   timeout: 5s
+    #   retries: 3
+
+
+  gateway:
+    build: ./api-gateway
+    container_name: api_gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - room
+      - bar
+      - guest
+      - reservation
+      - analytics
+
+  frontend:
+    build: ./frontend-streamlit
+    container_name: frontend_streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - gateway
+
+# fælles netværk (automatisk i v3.9, men eksplicit for klarhed)
+networks:
+  default:
+    name: hotel_arthur_net

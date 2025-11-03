@@ -4,7 +4,7 @@ import sqlite3, os, pandas as pd
 app = Flask(__name__)
 
 DB_FILE = "room.db"
-CSV_FILE = "../../NamesRoomsWithMonths4.csv"  # tilpas hvis sti er anderledes
+CSV_FILE = "data/NamesRoomsWithMonths4.csv"  # tilpas hvis sti er anderledes
 
 
 
@@ -78,7 +78,7 @@ def seed_from_csv():
 @app.get("/rooms")
 def get_all_rooms():
     conn = get_db()
-    rows = conn.execute("SELECT * FROM room_rentals LIMIT 100").fetchall()
+    rows = conn.execute("SELECT * FROM room_rentals").fetchall()
     return jsonify([dict(r) for r in rows])
 
 @app.get("/rooms/<int:room_id>")
@@ -165,7 +165,7 @@ def revenue_by_roomtype_and_season():
         SELECT 
             room_type, 
             season, 
-            SUM(price * days_rented) AS revenue
+            SUM(price) AS revenue
         FROM room_rentals
         WHERE room_type IS NOT NULL AND season IS NOT NULL
         GROUP BY room_type, season
@@ -236,6 +236,38 @@ def create_room():
         ))
         conn.commit()
     return {"status": "created"}, 201
+
+
+# ---------- HEALTH CHECK ----------
+from datetime import datetime
+import sqlite3, os
+
+@app.get("/health")
+def health_check_room():
+    """Health check for Room Service."""
+    db_status, record_count = False, 0
+    db_file = [f for f in os.listdir('.') if f.endswith('.db')]
+    if db_file:
+        try:
+            conn = sqlite3.connect(db_file[0])
+            cur = conn.cursor()
+            cur.execute("SELECT COUNT(*) FROM sqlite_master")
+            record_count = cur.fetchone()[0]
+            db_status = True
+        except Exception:
+            db_status = False
+        finally:
+            conn.close()
+
+    return jsonify({
+        "service": "room_service",
+        "status": "ok",
+        "timestamp": datetime.utcnow().isoformat(),
+        "details": {"db_connected": db_status, "db_tables": record_count}
+    })
+
+
+
 
 if __name__ == "__main__":
     init_db()

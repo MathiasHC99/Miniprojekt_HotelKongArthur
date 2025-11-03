@@ -1,10 +1,11 @@
 from flask import Flask, jsonify, request
 import sqlite3, pandas as pd, os
+import requests
 
 app = Flask(__name__)
 
 DB_FILE = "guest.db"
-CSV_FILE = "../../NamesRoomsWithMonths4.csv"  # samme datafil som room
+CSV_FILE = "data/NamesRoomsWithMonths4.csv"  # samme datafil som room
 
 #Localhost URL for testing: http://localhost:5003/
 # Endpoints: 
@@ -105,17 +106,20 @@ def delete_guest(guest_id):
 
 # ---------- ANALYTICS BASERET PÅ ROOM_RENTALS ----------
 
-ROOM_DB = "../room/room.db"
+ROOM_DB = "/app/data/room.db"
+
 
 def get_room_df():
-    """Hent room_rentals som DataFrame."""
-    if not os.path.exists(ROOM_DB):
-        print("⚠️ Room database not found.")
+    """Hent room_rentals som DataFrame fra room-service API."""
+    try:
+        r = requests.get("http://room_service:5001/rooms", timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        return pd.DataFrame(data)
+    except Exception as e:
+        print("⚠️ Kunne ikke hente data fra room-service:", e)
         return pd.DataFrame()
-    conn = sqlite3.connect(ROOM_DB)
-    df = pd.read_sql("SELECT * FROM room_rentals", conn)
-    conn.close()
-    return df
+
 
 
 @app.get("/guests/summary")
@@ -123,16 +127,15 @@ def guest_summary():
     """
     Returnerer:
       - total_guests (antal i guests.db)
-      - top_countries (fra guests.db)
       - by_country / by_season / by_country_roomtype (fra room_rentals)
     """
-    # --- Data fra guests.db (navne & antal) ---
+    # --- Data fra guests.db ---
     conn = get_db()
     df_guests = pd.read_sql("SELECT country FROM guests", conn)
     conn.close()
 
     total_guests = len(df_guests)
-    top_countries = df_guests["country"].value_counts().to_dict()
+    unique_countries = len(df_guests["country"].unique())
 
     # --- Data fra room_rentals (revenueanalyse) ---
     df_room = get_room_df()
@@ -140,7 +143,7 @@ def guest_summary():
         return jsonify({
             "summary": {
                 "total_guests": total_guests,
-                "unique_countries": len(df_guests["country"].unique()),
+                "unique_countries": unique_countries,
                 "avg_stay_days": 0,
                 "top_country": None
             },
@@ -149,9 +152,15 @@ def guest_summary():
             "by_country_roomtype": {}
         })
 
-    df_room["revenue"] = df_room["price"] * df_room["days_rented"]
+    # --- Datacleaning ---
+    df_room["country"] = df_room["country"].astype(str).str.strip().str.title()
+    df_room = df_room[df_room["country"].notna() & (df_room["country"].str.strip() != "") & (df_room["country"].str.lower() != "nan")]
+    df_room["price"] = pd.to_numeric(df_room["price"], errors="coerce")
+    df_room["days_rented"] = pd.to_numeric(df_room["days_rented"], errors="coerce")
+    df_room = df_room.dropna(subset=["country", "price", "days_rented"])
 
-    # Gns. opholdstid
+    # --- Beregninger ---
+    df_room["revenue"] = df_room["price"]
     avg_stay = round(df_room["days_rented"].mean(), 1)
 
     # Omsætning pr. land
@@ -170,8 +179,8 @@ def guest_summary():
     )
     result_season = {}
     for _, row in by_season.iterrows():
-        s = str(row["season"]).strip()
-        c = str(row["country"]).strip()
+        s = str(row["season"]).strip().title()
+        c = str(row["country"]).strip().title()
         r = float(row["revenue"])
         result_season.setdefault(s, {})[c] = r
 
@@ -183,17 +192,19 @@ def guest_summary():
     )
     result_heat = {}
     for _, row in by_country_room.iterrows():
-        c = str(row["country"]).strip()
+        c = str(row["country"]).strip().title()
         rt = str(row["room_type"]).strip()
         r = float(row["revenue"])
         result_heat.setdefault(c, {})[rt] = r
 
-    top_country = max(by_country, key=by_country.get)
+    # Mest værdifulde land
+    top_country = max(by_country, key=by_country.get) if by_country else None
 
+    # --- Samlet output ---
     return jsonify({
         "summary": {
             "total_guests": int(total_guests),
-            "unique_countries": int(df_room["country"].nunique()),
+            "unique_countries": int(unique_countries),
             "avg_stay_days": avg_stay,
             "top_country": top_country
         },
@@ -204,6 +215,33 @@ def guest_summary():
 
 
 
+# ---------- HEALTH CHECK ----------
+from datetime import datetime
+import sqlite3, os
+
+@app.get("/health")
+def health_check_guest():
+    """Health check for Guest Service."""
+    db_status, record_count = False, 0
+    db_file = [f for f in os.listdir('.') if f.endswith('.db')]
+    if db_file:
+        try:
+            conn = sqlite3.connect(db_file[0])
+            cur = conn.cursor()
+            cur.execute("SELECT COUNT(*) FROM sqlite_master")
+            record_count = cur.fetchone()[0]
+            db_status = True
+        except Exception:
+            db_status = False
+        finally:
+            conn.close()
+
+    return jsonify({
+        "service": "guest_service",
+        "status": "ok",
+        "timestamp": datetime.utcnow().isoformat(),
+        "details": {"db_connected": db_status, "db_tables": record_count}
+    })
 
 
 

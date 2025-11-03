@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 DB_FILE = "reservation.db"
-CSV_FILE = "../../NamesRoomsWithMonths4.csv"  # Samme dataset som guests/rooms
+CSV_FILE = "data/NamesRoomsWithMonths4.csv"  # Samme dataset som guests/rooms
 
 #Localhost URL for testing: http://localhost:5004/
 # Endpoints: 
@@ -112,7 +112,7 @@ def seed_from_csv():
 @app.get("/reservations")
 def all_reservations():
     conn = get_db()
-    rows = conn.execute("SELECT * FROM reservations LIMIT 200").fetchall()
+    rows = conn.execute("SELECT * FROM reservations").fetchall()
     return jsonify([dict(r) for r in rows])
 
 
@@ -173,6 +173,35 @@ def reservation_summary():
         )
     }
     return jsonify(summary)
+
+
+# ---------- HEALTH CHECK ----------
+from datetime import datetime
+import sqlite3, os
+
+@app.get("/health")
+def health_check_reservation():
+    """Health check for Reservation Service."""
+    db_status, record_count = False, 0
+    db_file = [f for f in os.listdir('.') if f.endswith('.db')]
+    if db_file:
+        try:
+            conn = sqlite3.connect(db_file[0])
+            cur = conn.cursor()
+            cur.execute("SELECT COUNT(*) FROM sqlite_master")
+            record_count = cur.fetchone()[0]
+            db_status = True
+        except Exception:
+            db_status = False
+        finally:
+            conn.close()
+
+    return jsonify({
+        "service": "reservation_service",
+        "status": "ok",
+        "timestamp": datetime.utcnow().isoformat(),
+        "details": {"db_connected": db_status, "db_tables": record_count}
+    })
 
 
 # ---------- MAIN ----------

@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 import requests
 import altair as alt
+from utils import API_BASE, fetch_json
 
 # ---------- KONFIGURATION ----------
 st.set_page_config(page_title="🛏️ Room Insights – Hotel Kong Arthur", layout="wide")
-API_ROOM = "http://localhost:8000/api/room"
-API_RES = "http://localhost:8000/api/reservation"
+API_ROOM = f"{API_BASE}/room"
+API_RES = f"{API_BASE}/reservation"
 
 # ---------- HJÆLPEFUNKTION ----------
 @st.cache_data(ttl=3600)

@@ -3,10 +3,12 @@ import pandas as pd
 import requests
 import altair as alt
 alt.data_transformers.disable_max_rows()
+from utils import API_BASE
 
 # ---------- KONFIG ----------
 st.set_page_config(page_title="Guest & Country – Hotel Kong Arthur", layout="wide")
-API_GUEST = "http://localhost:8000/api/guest/guests"
+API_GUEST = f"{API_BASE}/guest"
+API_RES = f"{API_BASE}/reservation"
 
 # ---------- HJÆLPEFUNKTION ----------
 @st.cache_data(ttl=60)
@@ -45,17 +47,15 @@ def fetch_json(endpoint):
             }
         }
 
-#---------- HENT DATA ----------
-guest_data = fetch_json(f"{API_GUEST}/summary")
+# ---------- HENT DATA ----------
+# Kun ét kald – alle data ligger her
+guest_data = fetch_json(f"{API_GUEST}/guests/summary")
+
 summary = guest_data.get("summary", {})
 country_data = guest_data.get("by_country", {})
 season_data = guest_data.get("by_season", {})
 country_room = guest_data.get("by_country_roomtype", {})
-
-
-
-
-
+reservations = fetch_json(f"{API_RES}/reservations/summary")
 
 # ---------- HEADER ----------
 st.title("Guest & Country Insights")
@@ -66,11 +66,16 @@ st.markdown(
 st.divider()
 
 # ---------- KPI’ER ----------
+
+# Gns. ophold
+avg_stay = f"{reservations.get('avg_stay_days', 0):.1f} dage"
+
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("👥 Gæster i alt", f"{summary.get('total_guests', 0):,}")
 col2.metric("🌎 Antal lande", f"{summary.get('unique_countries', 0)}")
 col3.metric("🏆 Mest værdifulde marked", summary.get("top_country", "N/A"))
-col4.metric("📆 Gns. ophold", f"{summary.get('avg_stay_days', 0):.1f} dage")
+# col4.metric("📆 Gns. ophold", f"{summary.get('avg_stay_days', 0):.1f} dage")
+col4.metric("📆 Gns. ophold", avg_stay)
 st.divider()
 
 # ---------- FILTER ----------
@@ -89,33 +94,29 @@ df_country = pd.DataFrame(list(country_data.items()), columns=["Land", "Omsætni
 df_country = df_country.sort_values("Omsætning (DKK)", ascending=False)
 if not df_country.empty:
     chart_country = (
-    alt.Chart(df_country)
-    .mark_bar(cornerRadiusTopLeft=5, cornerRadiusTopRight=5)
-    .encode(
-        x=alt.X("Omsætning (DKK):Q", title="Omsætning (DKK)"),
-        y=alt.Y(
-            "Land:N",
-            sort=alt.EncodingSortField(field="Omsætning (DKK)", order="descending"),
-            title=None
-        ),
-        color=alt.Color("Omsætning (DKK):Q", scale=alt.Scale(scheme="tealblues")),
-        tooltip=["Land", "Omsætning (DKK)"]
+        alt.Chart(df_country)
+        .mark_bar(cornerRadiusTopLeft=5, cornerRadiusTopRight=5)
+        .encode(
+            x=alt.X("Omsætning (DKK):Q", title="Omsætning (DKK)"),
+            y=alt.Y(
+                "Land:N",
+                sort=alt.EncodingSortField(field="Omsætning (DKK)", order="descending"),
+                title=None
+            ),
+            color=alt.Color("Omsætning (DKK):Q", scale=alt.Scale(scheme="tealblues")),
+            tooltip=["Land", "Omsætning (DKK)"]
+        )
+        .properties(height=max(400, len(df_country) * 20))
     )
-    .properties(height=max(400, len(df_country) * 20))  # dynamisk højde hvis mange lande
-)
-
-    
     st.altair_chart(chart_country, use_container_width=True)
 else:
     st.info("Ingen landedata tilgængelige.")
-
 st.divider()
 
 # ---------- SÆSONAFHÆNGIGT VIEW ----------
 st.subheader("Omsætning pr. sæson og land")
 
 if season_data:
-    # Sammensæt dataframe
     df_season = pd.DataFrame([
         (season, country, revenue)
         for season, countries in season_data.items()
@@ -152,18 +153,16 @@ df_heat = pd.DataFrame([
 
 if not df_heat.empty:
     chart_heat = (
-    alt.Chart(df_heat)
-    .mark_rect()
-    .encode(
-        x=alt.X("Værelsestype:N", title="Værelsestype"),
-        y=alt.Y("Land:N", sort=alt.EncodingSortField(field="Land", order="ascending")),
-        color=alt.Color("Omsætning (DKK):Q", scale=alt.Scale(scheme="blues")),
-        tooltip=["Land", "Værelsestype", "Omsætning (DKK)"]
+        alt.Chart(df_heat)
+        .mark_rect()
+        .encode(
+            x=alt.X("Værelsestype:N", title="Værelsestype"),
+            y=alt.Y("Land:N", sort=alt.EncodingSortField(field="Land", order="ascending")),
+            color=alt.Color("Omsætning (DKK):Q", scale=alt.Scale(scheme="blues")),
+            tooltip=["Land", "Værelsestype", "Omsætning (DKK)"]
+        )
+        .properties(height=max(400, len(df_heat['Land'].unique()) * 20))
     )
-    .properties(height=max(400, len(df_heat["Land"].unique()) * 20))
-)
-
-    
     st.altair_chart(chart_heat, use_container_width=True)
 else:
     st.info("Ingen data tilgængelig for heatmap.")

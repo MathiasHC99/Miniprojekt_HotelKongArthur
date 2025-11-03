@@ -2,38 +2,26 @@ import streamlit as st
 import requests
 import pandas as pd
 import altair as alt
+from utils import API_BASE  # Vi bruger kun denne, fetch_json defineres herunder
 
 
-# from utils import get_data, month_dataframe
-
-# API_ANALYTICS = "http://localhost:8000/api/analytics/analytics"
-
-# overview = get_data(f"{API_ANALYTICS}/overview", "overview_data")
-# monthly = get_data(f"{API_ANALYTICS}/monthly_revenue", "monthly_data")
-
-# st.subheader("📈 Årets månedlige omsætning")
-
-# if "monthly_revenue_dkk" in monthly:
-#     df_month = month_dataframe(monthly["monthly_revenue_dkk"])
-#     st.line_chart(df_month)
-# else:
-#     st.info("Ingen månedlige data tilgængelige.")
-
-
-
-
+def format_dkk(value, decimals=0):
+    """Formatér tal som danske kroner med punktum-separator."""
+    if pd.isna(value):
+        return "0 DKK"
+    return f"{value:,.{decimals}f}".replace(",", "X").replace(".", ",").replace("X", ".") + " DKK"
 
 
 # ---------- KONFIG ----------
 st.set_page_config(page_title="Hotel Kong Arthur – Overview", layout="wide")
-API_ANALYTICS = "http://localhost:8000/api/analytics/analytics"
 
-
+API_ANALYTICS = f"{API_BASE}/analytics"
+API_RES = f"{API_BASE}/reservation"
 
 # ---------- HJÆLPEFUNKTION ----------
-
 @st.cache_data(ttl=60)
 def fetch_json(endpoint):
+    """Hent JSON fra API eller vis mock-data ved fejl."""
     try:
         r = requests.get(endpoint, timeout=15)
         r.raise_for_status()
@@ -53,9 +41,10 @@ def fetch_json(endpoint):
             "top_countries": {"Denmark": 112, "Germany": 95, "Sweden": 88, "Norway": 83, "UK": 77},
         }
 
-# ---------- HENT DATA ---------- muligvis overflødig hvis utils bruges
+# ---------- HENT DATA ----------
 overview = fetch_json(f"{API_ANALYTICS}/overview")
 monthly = fetch_json(f"{API_ANALYTICS}/monthly_revenue")
+reservations = fetch_json(f"{API_RES}/reservations/summary")
 
 # ---------- HEADER ----------
 st.title("Hotel Kong Arthur – Executive Overview")
@@ -65,58 +54,53 @@ st.markdown(
 )
 st.divider()
 
+
 # ---------- KPI’ER ----------
+avg_stay = f"{reservations.get('avg_stay_days', 0):.1f} dage"
+total_guests = reservations.get("total_guests") or overview.get("total_guests", 0)
+
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("💰 Samlet omsætning", f"{overview['total_revenue_all']:,.0f} DKK")
-col2.metric("🛏️ Gns. dagspris (ADR)", f"{overview['avg_daily_rate']:,.0f} DKK")
-col3.metric("📆 Gns. ophold", f"{overview['avg_stay_days']:,.1f} dage")
-col4.metric("👥 Gæster", f"{overview['total_guests']:,.0f}")
+col1.metric("💰 Samlet omsætning", format_dkk(overview.get('total_revenue_all', 0)))
+col2.metric("🛏️ Gns. dagspris (ADR)", format_dkk(overview.get('avg_daily_rate', 0)))
+col3.metric("📆 Gns. ophold", avg_stay)
+col4.metric("👥 Gæster", f"{total_guests:,.0f}".replace(",", "."))
 
 st.divider()
 
 # ---------- MÅNEDLIG OMSÆTNING ----------
 st.subheader("Årets månedlige omsætning")
 if "monthly_revenue_dkk" in monthly:
-    # Lav DataFrame
     df_month = pd.DataFrame(list(monthly["monthly_revenue_dkk"].items()), columns=["Måned", "Omsætning (DKK)"])
-    
-    # Definer korrekt månedrækkefølge
     month_order = [
         "Januar", "Februar", "Marts", "April", "Maj", "Juni",
         "Juli", "August", "September", "Oktober", "November", "December"
     ]
-    
-    # Sørg for korrekt rækkefølge selvom nogle måneder mangler
     df_month["Måned"] = pd.Categorical(df_month["Måned"], categories=month_order, ordered=True)
     df_month.sort_values("Måned", inplace=True)
-    df_month.set_index("Måned", inplace=True)
-
-    # Tegn linjegraf
-    st.line_chart(df_month)
-
+    st.line_chart(df_month.set_index("Måned"))
 else:
     st.info("Ingen månedlige data tilgængelige.")
 
 # ---------- TOP ROOM TYPES ----------
 st.subheader("Mest indbringende værelsestyper")
 df_rooms = pd.DataFrame(list(overview["top_room_types"].items()), columns=["Værelsestype", "Omsætning (DKK)"])
+df_rooms["Omsætning (DKK)"] = df_rooms["Omsætning (DKK)"].round(0)
+
 st.bar_chart(df_rooms.set_index("Værelsestype"))
 
 # ---------- SÆSONOMSÆTNING ----------
 st.subheader("Omsætning pr. sæson")
 df_season = pd.DataFrame(list(overview["revenue_by_season"].items()), columns=["Sæson", "Omsætning (DKK)"])
+df_season["Omsætning (DKK)"] = df_season["Omsætning (DKK)"].round(0)
 st.bar_chart(df_season.set_index("Sæson"))
 
 # ---------- TOPLANDE ----------
 st.subheader("Gæster fordelt på lande")
-
 df_country = pd.DataFrame(list(overview["top_countries"].items()), columns=["Land", "Antal gæster"])
-
 if df_country.empty:
     st.info("Ingen gæstedata tilgængelig.")
 else:
     df_country = df_country.sort_values("Antal gæster", ascending=False)
-
     chart_country = (
         alt.Chart(df_country)
         .mark_bar(cornerRadiusTopLeft=5, cornerRadiusTopRight=5)
