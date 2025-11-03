@@ -15,6 +15,8 @@ CSV_FILE = "../../NamesRoomsWithMonths4.csv"  # tilpas hvis sti er anderledes
 # rooms/summary
 # rooms/revenue/by_season
 # rooms/revenue/by_roomtype
+# rooms/bookings/by_month_and_type
+# rooms/revenue/by_roomtype_and_season
 # rooms/revenue/by_country
 # rooms/revenue/total
 
@@ -125,6 +127,66 @@ def revenue_by_roomtype():
           .to_dict()
     )
     return jsonify(grouped)
+
+
+@app.get("/rooms/bookings/by_month_and_type")
+def bookings_by_month_and_type():
+    """Returnerer antal udlejede værelser pr. måned og værelsetype."""
+    conn = get_db()
+    df = pd.read_sql("""
+        SELECT 
+            room_type,
+            monthnumber AS month,
+            COUNT(*) AS total_bookings
+        FROM room_rentals
+        WHERE room_type IS NOT NULL AND monthnumber IS NOT NULL
+        GROUP BY room_type, month
+        ORDER BY month ASC
+    """, conn)
+    conn.close()
+
+    # Konverter til struktur: {room_type: {month: count}}
+    result = {}
+    for _, row in df.iterrows():
+        rt = row["room_type"]
+        month = int(row["month"])
+        count = int(row["total_bookings"])
+        result.setdefault(rt, {})[month] = count
+
+    return result
+
+
+
+@app.get("/rooms/revenue/by_roomtype_and_season")
+def revenue_by_roomtype_and_season():
+    """Returnerer omsætning pr. værelsestype fordelt på sæsoner."""
+    conn = get_db()
+    df = pd.read_sql("""
+        SELECT 
+            room_type, 
+            season, 
+            SUM(price * days_rented) AS revenue
+        FROM room_rentals
+        WHERE room_type IS NOT NULL AND season IS NOT NULL
+        GROUP BY room_type, season
+    """, conn)
+    conn.close()
+
+    result = {}
+    for _, row in df.iterrows():
+        season = str(row["season"]).strip()
+        room = str(row["room_type"]).strip()
+        revenue = float(row["revenue"]) if row["revenue"] is not None else 0.0
+
+        # Spring over rækker med tomme værdier
+        if not season or not room:
+            continue
+
+        # Opret dictionarystruktur
+        result.setdefault(season, {})[room] = revenue
+
+    return result
+
 
 @app.get("/rooms/revenue/by_season")
 def revenue_by_season():

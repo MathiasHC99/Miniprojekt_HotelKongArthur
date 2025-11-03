@@ -14,8 +14,9 @@ RES_URL = "http://localhost:5004"
 # ---------- HJÆLPEFUNKTIONER ----------
 
 def safe_get(url):
+    print(f"➡️  Henter data fra: {url}")
     try:
-        r = requests.get(url, timeout=3)
+        r = requests.get(url, timeout=15)
         r.raise_for_status()
         return r.json()
     except Exception as e:
@@ -44,7 +45,7 @@ def analytics_overview():
         "total_revenue_bar": round(total_bar, 2),
         "total_revenue_reservations": round(total_res, 2),
         "total_guests": guest_data.get("total_guests", 0),
-        "top_countries": guest_data.get("top_countries", {}),
+        "top_countries": guest_data.get("by_country", {}),
         "avg_daily_rate": res_data.get("avg_daily_rate", 0),
         "avg_stay_days": res_data.get("avg_stay_days", 0),
         "top_room_types": res_data.get("top_room_types", {}),

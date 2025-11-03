@@ -1,52 +1,66 @@
-from flask import Flask, request, jsonify
-import requests, os
+from flask import Flask, jsonify, request
+import requests
 
 app = Flask(__name__)
 
+# ---------- KONFIGURATION ----------
 SERVICES = {
-  "reservation": os.getenv("RESERVATION_URL","http://reservation:5000"),
-  "room": os.getenv("ROOM_URL","http://room:5000"),
-  "guest": os.getenv("GUEST_URL","http://guest:5000"),
-  "review": os.getenv("REVIEW_URL","http://review:5000"),
-  "bar": os.getenv("BAR_URL","http://bar:5000"),
-  "analytics": os.getenv("ANALYTICS_URL","http://analytics:5000"),
+    "room": "http://localhost:5001",
+    "bar": "http://localhost:5002",
+    "guest": "http://localhost:5003",
+    "reservation": "http://localhost:5004",
+    "analytics": "http://localhost:5005"
 }
 
-# Offentlige endpoints til frontend
-@app.get("/kpis/rooms")
-def rooms_kpis():
-    return requests.get(f"{SERVICES['analytics']}/kpis/rooms").json()
+TIMEOUT = 15  # sekunder
 
-@app.get("/kpis/top")
-def top_kpis():
-    return requests.get(f"{SERVICES['analytics']}/kpis/top").json()
 
-@app.get("/bar/summary")
-def bar_summary():
-    return requests.get(f"{SERVICES['bar']}/summary").json()
+# ---------- HJÆLPEFUNKTIONER ----------
 
-# _internal aggregator til analytics
-@app.get("/_internal/reservations")
-def _int_reservations():
-    return requests.get(f"{SERVICES['reservation']}/reservations").json()
+def forward_request(service_key, path):
+    """Videresend request til korrekt service baseret på service_key."""
+    base_url = SERVICES.get(service_key)
+    if not base_url:
+        return jsonify({"error": f"Service '{service_key}' not found"}), 404
 
-@app.get("/_internal/rooms")
-def _int_rooms():
-    return requests.get(f"{SERVICES['room']}/rooms").json()
+    target_url = f"{base_url}/{path}"
+    method = request.method.lower()
 
-@app.get("/_internal/denormalized_sales")
-def _int_sales():
-    # join-lignende aggregering via gateway (reservation + room + guest)
-    res = requests.get(f"{SERVICES['reservation']}/reservations").json()
-    rooms = {r["id"]: r for r in requests.get(f"{SERVICES['room']}/rooms").json()}
-    guests = {g["id"]: g for g in requests.get(f"{SERVICES['guest']}/guests").json()}
-    out=[]
-    for r in res:
-        room = rooms.get(r["room_id"],{})
-        guest = guests.get(r["guest_id"],{})
-        out.append({
-          "price_dkk": r["price_dkk"],
-          "room_type": room.get("type","Unknown"),
-          "country": guest.get("country","Unknown")
-        })
-    return jsonify(out)
+    try:
+        if method == "get":
+            resp = requests.get(target_url, params=request.args, timeout=TIMEOUT)
+        elif method == "post":
+            resp = requests.post(target_url, json=request.get_json(), timeout=TIMEOUT)
+        elif method == "delete":
+            resp = requests.delete(target_url, timeout=TIMEOUT)
+        else:
+            return jsonify({"error": "Unsupported HTTP method"}), 405
+
+        return jsonify(resp.json()), resp.status_code
+
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": f"Gateway timeout or connection error to {target_url}", "details": str(e)}), 504
+
+
+# ---------- ROUTES ----------
+
+@app.route("/")
+def index():
+    return jsonify({
+        "message": "API Gateway for Hotel Kong Arthur",
+        "services": list(SERVICES.keys()),
+        "example": "/api/room/rooms/revenue/total"
+    })
+
+
+@app.route("/api/<service>/<path:path>", methods=["GET", "POST", "DELETE"])
+def proxy(service, path):
+    """Generisk proxy der sender kald videre til microservice."""
+    return forward_request(service, path)
+
+
+# ---------- MAIN ----------
+
+if __name__ == "__main__":
+    print("API Gateway ruller derudaf på port 8000 ...")
+    app.run(host="0.0.0.0", port=8000, threaded=True)

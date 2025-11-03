@@ -2,13 +2,14 @@ import streamlit as st
 import requests
 import pandas as pd
 
+
 # ---------- KONFIGURATION ----------
 st.set_page_config(
     page_title="Hotel Kong Arthur – Analytics Dashboard",
     layout="wide"
 )
 
-API_ANALYTICS = "http://localhost:5005"  # Analytics service
+API_ANALYTICS = "http://localhost:8000/api/analytics" # Analytics service
 
 # ---------- HJÆLPEFUNKTIONER ----------
 

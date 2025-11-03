@@ -120,26 +120,26 @@ def bar_summary():
     conn = get_db()
     df = pd.read_sql("SELECT * FROM drinks", conn)
 
-    # Sørger for at numeriske kolonner faktisk er floats
-    for col in ["price_dkk", "units_sold", "total_revenue"]:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
+    total_revenue = round(df["total_revenue"].sum(), 2)
+    total_drinks = len(df)
+    avg_price = round(df["price_dkk"].mean(), 2)
+    top_drink = df.sort_values("units_sold", ascending=False).iloc[0]["drink_name"]
 
-    summary = {
-        "total_revenue_dkk": round(df["total_revenue"].sum(), 2),
-        "avg_price_dkk": round(df["price_dkk"].mean(), 2),
-        "top_drinks": (
-            df.sort_values("total_revenue", ascending=False)
-              [["drink_name", "category", "total_revenue"]]
-              .head(5)
-              .to_dict(orient="records")
-        ),
-        "revenue_by_category": (
-            df.groupby("category")["total_revenue"]
-              .sum()
-              .round(2)
-              .to_dict()
-        )
-    }
+    category_revenue = (
+        df.groupby("category")["total_revenue"]
+        .sum()
+        .sort_values(ascending=False)
+        .to_dict()
+    )
+
+    return jsonify({
+        "total_revenue_dkk": total_revenue,
+        "total_drinks": total_drinks,
+        "avg_price": avg_price,
+        "top_drink": top_drink,
+        "category_revenue": category_revenue,
+        "drinks": df.to_dict(orient="records")
+    })
 
     # Procentfordeling mellem kategorier
     total = summary["total_revenue_dkk"]

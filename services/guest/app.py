@@ -103,24 +103,109 @@ def delete_guest(guest_id):
     return {"status": "deleted"}, 200
 
 
+# ---------- ANALYTICS BASERET PÅ ROOM_RENTALS ----------
+
+ROOM_DB = "../room/room.db"
+
+def get_room_df():
+    """Hent room_rentals som DataFrame."""
+    if not os.path.exists(ROOM_DB):
+        print("⚠️ Room database not found.")
+        return pd.DataFrame()
+    conn = sqlite3.connect(ROOM_DB)
+    df = pd.read_sql("SELECT * FROM room_rentals", conn)
+    conn.close()
+    return df
+
+
 @app.get("/guests/summary")
 def guest_summary():
-    """Returner antal gæster pr. land (til Analytics)."""
+    """
+    Returnerer:
+      - total_guests (antal i guests.db)
+      - top_countries (fra guests.db)
+      - by_country / by_season / by_country_roomtype (fra room_rentals)
+    """
+    # --- Data fra guests.db (navne & antal) ---
     conn = get_db()
-    df = pd.read_sql("SELECT country FROM guests", conn)
+    df_guests = pd.read_sql("SELECT country FROM guests", conn)
+    conn.close()
 
-    summary = (
-        df["country"]
-        .value_counts()
-        .head(10)
+    total_guests = len(df_guests)
+    top_countries = df_guests["country"].value_counts().to_dict()
+
+    # --- Data fra room_rentals (revenueanalyse) ---
+    df_room = get_room_df()
+    if df_room.empty:
+        return jsonify({
+            "summary": {
+                "total_guests": total_guests,
+                "unique_countries": len(df_guests["country"].unique()),
+                "avg_stay_days": 0,
+                "top_country": None
+            },
+            "by_country": {},
+            "by_season": {},
+            "by_country_roomtype": {}
+        })
+
+    df_room["revenue"] = df_room["price"] * df_room["days_rented"]
+
+    # Gns. opholdstid
+    avg_stay = round(df_room["days_rented"].mean(), 1)
+
+    # Omsætning pr. land
+    by_country = (
+        df_room.groupby("country")["revenue"]
+        .sum()
+        .sort_values(ascending=False)
         .to_dict()
     )
 
-    total_guests = len(df)
+    # Omsætning pr. sæson og land
+    by_season = (
+        df_room.groupby(["season", "country"])["revenue"]
+        .sum()
+        .reset_index()
+    )
+    result_season = {}
+    for _, row in by_season.iterrows():
+        s = str(row["season"]).strip()
+        c = str(row["country"]).strip()
+        r = float(row["revenue"])
+        result_season.setdefault(s, {})[c] = r
+
+    # Land × værelsestype
+    by_country_room = (
+        df_room.groupby(["country", "room_type"])["revenue"]
+        .sum()
+        .reset_index()
+    )
+    result_heat = {}
+    for _, row in by_country_room.iterrows():
+        c = str(row["country"]).strip()
+        rt = str(row["room_type"]).strip()
+        r = float(row["revenue"])
+        result_heat.setdefault(c, {})[rt] = r
+
+    top_country = max(by_country, key=by_country.get)
+
     return jsonify({
-        "total_guests": total_guests,
-        "top_countries": summary
+        "summary": {
+            "total_guests": int(total_guests),
+            "unique_countries": int(df_room["country"].nunique()),
+            "avg_stay_days": avg_stay,
+            "top_country": top_country
+        },
+        "by_country": by_country,
+        "by_season": result_season,
+        "by_country_roomtype": result_heat
     })
+
+
+
+
+
 
 
 # ---------- MAIN ----------
